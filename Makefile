@@ -6,48 +6,58 @@
 #    By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/01/21 20:30:28 by dderevyn          #+#    #+#              #
-#    Updated: 2019/02/05 12:46:58 by dderevyn         ###   ########.fr        #
+#    Updated: 2019/02/17 21:24:27 by dderevyn         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = push_swap
+NAME1 = checker
 
 OBJS_DIR = .$(patsubst %.a,%,$(NAME))_objects
 CC = clang
 CFLAGS = -Wall -Wextra -Werror
-CLIBS = -lmlx -framework OpenGL -framework AppKit
 RM = /bin/rm -rf
 CP = cp -rf
+ARG = 2 1 3 6 8 5
 
 LIBFT_PATH = libft/
 LIBFT = libft.a
 
-FDF_PATH = ffdf/
-FDF_INCS = 		fdf.h\
-				fdf_typedefs.h
-FDF_SRCS =		fdf.c\
-				fdf_parse.c\
-				fdf_projections.c\
-				fdf_draw.c\
-				fdf_interact.c\
-				fdf_interface.c\
-				fdf_gradient.c\
-				fdf_help_menu.c\
-				fdf_mouse_control.c\
-				fdf_key_control.c\
-				fdf_inits.c\
-				fdf_complete_map.c
-FDF_OBJS = $(FDF_SRCS:%.c=$(FDF_OBJS_DIR)/%.o)
-FDF_OBJS_DIR = $(OBJS_DIR)
+PUSH_SWAP_PATH = fpush_swap/
+PUSH_SWAP_INCS = 		push_swap.h\
+                        push_swap_typedefs.h
+PUSH_SWAP_SRCS =		push_swap.c\
+						operations.c\
+						shared_funs.c\
+						push_swap_operations.c\
+						push_swap_utils.c
+PUSH_SWAP_OBJS_DIR = $(OBJS_DIR)
+PUSH_SWAP_OBJS = $(PUSH_SWAP_SRCS:%.c=$(PUSH_SWAP_OBJS_DIR)/%.o)
 
-all: libft $(NAME)
+CHECKER_PATH = fpush_swap/
+CHECKER_INCS = 		push_swap.h\
+					push_swap_typedefs.h
+CHECKER_SRCS =		checker.c\
+					operations.c\
+					shared_funs.c
+CHECKER_OBJS_DIR = $(OBJS_DIR)
+CHECKER_OBJS = $(CHECKER_SRCS:%.c=$(CHECKER_OBJS_DIR)/%.o)
 
-$(NAME): $(FDF_OBJS)
-	@$(CC) $(CFLAGS) $^ $(CLIBS) -L $(LIBFT_PATH) -l$(patsubst %.a,%,$(LIBFT:lib%=%)) -o $(NAME)
+all: libft $(NAME) $(NAME1)
 
-$(FDF_OBJS_DIR)/%.o: $(FDF_PATH)%.c
-	@mkdir -p $(FDF_OBJS_DIR)
-	@$(CC) $(CFLAGS) -c $< $(addprefix -I.,$(addprefix $(FDF_PATH),$(FDF_INCS))) -o $@
+$(NAME): $(PUSH_SWAP_OBJS)
+	@$(CC) $(CFLAGS) $^ -L $(LIBFT_PATH) -l$(patsubst %.a,%,$(LIBFT:lib%=%)) -o $(NAME)
+
+$(NAME1): $(CHECKER_OBJS)
+	@$(CC) $(CFLAGS) $^ -L $(LIBFT_PATH) -l$(patsubst %.a,%,$(LIBFT:lib%=%)) -o $(NAME1)
+
+$(PUSH_SWAP_OBJS_DIR)/%.o: $(PUSH_SWAP_PATH)%.c
+	@mkdir -p $(PUSH_SWAP_OBJS_DIR)
+	@$(CC) $(CFLAGS) -c $< $(addprefix -I.,$(addprefix $(PUSH_SWAP_PATH),$(PUSH_SWAP_INCS))) -o $@
+
+$(CHECKER_OBJS_DIR)/%.o: $(CHECKER_PATH)%.c
+	@mkdir -p $(CHECKER_OBJS_DIR)
+	@$(CC) $(CFLAGS) -c $< $(addprefix -I.,$(addprefix $(CHECKER_PATH),$(CHECKER_INCS))) -o $@
 
 libft:
 	@cd libft && make $(LIBFT)
@@ -59,21 +69,31 @@ clean:
 fclean: clean
 	@cd libft && make fclean
 	@$(RM) $(NAME)
+	@$(RM) $(NAME1)
 
 re: fclean all
 
 norm:
 	@cd libft && make norm
-	@norminette $(addprefix $(FDF_PATH),$(FDF_SRCS)) \
-	$(addprefix $(FDF_PATH),$(FDF_INCS))
+	@norminette $(addprefix $(PUSH_SWAP_PATH),$(PUSH_SWAP_SRCS)) \
+	$(addprefix $(PUSH_SWAP_PATH),$(PUSH_SWAP_INCS))
+
+runp:
+	@./push_swap $(ARG) || true
 
 run:
-	@./fdf maps/42.fdf
+	@./push_swap $(ARG) | ./checker $(ARG) || true
+	@./push_swap $(ARG) | wc -l
+
+frun: run
+	####
+	@./push_swap $(ARG) || true
+	####
 
 test: rmt
 	@mkdir -p test
 	@$(CP) $(LIBFT_PATH) test/$(LIBFT_PATH)
-	@$(CP) $(FDF_PATH) test/$(FDF_PATH)
+	@$(CP) $(PUSH_SWAP_PATH) test/$(PUSH_SWAP_PATH)
 	@$(CP) author test/author
 	@$(CP) Makefile test/Makefile
 

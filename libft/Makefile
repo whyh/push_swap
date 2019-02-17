@@ -31,12 +31,14 @@ LIBFT_SRCS = 	ft_abs.c\
 				ft_nbr_len.c\
 				ft_strchr.c\
 				ft_strdel.c\
+				ft_strfrepl.c\
 				ft_strin.c\
 				ft_strjoin.c\
 				ft_strlen.c\
+				ft_strncmp.c\
 				ft_strncpy.c\
 				ft_strndup.c\
-				ft_strncmp.c\
+				ft_strneject.c\
 				ft_strnew.c\
 				ft_strnin.c\
 				ft_strninject.c\

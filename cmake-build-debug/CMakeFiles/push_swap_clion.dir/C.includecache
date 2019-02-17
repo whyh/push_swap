@@ -6,6 +6,34 @@
 
 #IncludeRegexTransform: 
 
+/Users/dderevyn/CLionProjects/push_swap/fpush_swap/operations.c
+push_swap.h
+/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap.h
+
+/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap.c
+push_swap.h
+/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap.h
+
+/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap.h
+../libft/libft.h
+/Users/dderevyn/CLionProjects/push_swap/libft/libft.h
+push_swap_typedefs.h
+/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap_typedefs.h
+
+/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap_operations.c
+push_swap.h
+/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap.h
+
+/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap_typedefs.h
+
+/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap_utils.c
+push_swap.h
+/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap.h
+
+/Users/dderevyn/CLionProjects/push_swap/fpush_swap/shared_funs.c
+push_swap.h
+/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap.h
+
 /Users/dderevyn/CLionProjects/push_swap/libft/ft_gnl/ft_gnl_typedefs.h
 ../libft.h
 /Users/dderevyn/CLionProjects/push_swap/libft/libft.h
@@ -43,12 +71,4 @@ ft_printf/ft_printf.h
 /Users/dderevyn/CLionProjects/push_swap/libft/ft_printf/ft_printf.h
 
 /Users/dderevyn/CLionProjects/push_swap/libft/libft_typedefs.h
-
-/Users/dderevyn/CLionProjects/push_swap/push_swap/ft_push_swap.c
-ft_push_swap.h
-/Users/dderevyn/CLionProjects/push_swap/push_swap/ft_push_swap.h
-
-/Users/dderevyn/CLionProjects/push_swap/push_swap/ft_push_swap.h
-../libft/libft.h
-/Users/dderevyn/CLionProjects/push_swap/libft/libft.h
 

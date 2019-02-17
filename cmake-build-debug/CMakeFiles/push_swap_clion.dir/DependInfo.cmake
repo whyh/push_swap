@@ -4,6 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/Users/dderevyn/CLionProjects/push_swap/fpush_swap/operations.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/operations.c.o"
+  "/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap.c.o"
+  "/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap_operations.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_operations.c.o"
+  "/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap_utils.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_utils.c.o"
+  "/Users/dderevyn/CLionProjects/push_swap/fpush_swap/shared_funs.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/shared_funs.c.o"
   "/Users/dderevyn/CLionProjects/push_swap/libft/ft_abs.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/libft/ft_abs.c.o"
   "/Users/dderevyn/CLionProjects/push_swap/libft/ft_atoibase.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/libft/ft_atoibase.c.o"
   "/Users/dderevyn/CLionProjects/push_swap/libft/ft_gnl/ft_gnl.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/libft/ft_gnl/ft_gnl.c.o"
@@ -44,12 +49,6 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/dderevyn/CLionProjects/push_swap/libft/ft_strnin.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/libft/ft_strnin.c.o"
   "/Users/dderevyn/CLionProjects/push_swap/libft/ft_strninject.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/libft/ft_strninject.c.o"
   "/Users/dderevyn/CLionProjects/push_swap/libft/ft_strrchr.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/libft/ft_strrchr.c.o"
-  "/Users/dderevyn/CLionProjects/push_swap/push_swap/ft_push_swap.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/push_swap/ft_push_swap.c.o"
-  "/Users/dderevyn/CLionProjects/push_swap/push_swap/ft_push_swap_checker.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/push_swap/ft_push_swap_checker.c.o"
-  "/Users/dderevyn/CLionProjects/push_swap/push_swap/operations/ft_pp.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/push_swap/operations/ft_pp.c.o"
-  "/Users/dderevyn/CLionProjects/push_swap/push_swap/operations/ft_rr.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/push_swap/operations/ft_rr.c.o"
-  "/Users/dderevyn/CLionProjects/push_swap/push_swap/operations/ft_rrr.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/push_swap/operations/ft_rrr.c.o"
-  "/Users/dderevyn/CLionProjects/push_swap/push_swap/operations/ft_ss.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/push_swap/operations/ft_ss.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

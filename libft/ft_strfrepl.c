@@ -17,6 +17,10 @@ void	ft_strfrepl(char **buff, char *targ, char *repl, long long field)
 	long long	i;
 	size_t		n;
 
+	if (!buff || !*buff || !targ)
+		return ;
+	if (!repl)
+		repl = ft_strnew(0);
 	if (field < 0)
 		field = (long long)ft_strlen(*buff);
 	n = ft_strlen(targ);
