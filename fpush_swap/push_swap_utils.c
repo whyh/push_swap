@@ -6,32 +6,40 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/17 20:26:51 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/02/21 15:29:56 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/02/22 21:34:57 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int				push_swap_next(t_push_swap_list *stack, size_t group)
+int				push_swap_next(t_push_swap_data *data, char spec)
 {
 	t_push_swap_list	*stack_tmp;
+	t_push_swap_list	*stack;
 	int					r;
 	int					rr;
 
-	stack_tmp = stack;
+	if (spec == 'a')
+		stack = data->stack_a;
+	else
+		stack = data->stack_b;
 	r = 0;
-	while (stack_tmp->group != group)
+	stack_tmp = stack;
+	while (stack_tmp->group != data->group && (size_t)ft_abs(r) <= data->stack_size)//TODO assure that length counter was added
 	{
 		stack_tmp = stack_tmp->next;
 		++r;
 	}
+	data->stack_next = stack_tmp;
 	stack_tmp = stack;
 	rr = 0;
-	while (stack_tmp->group != group)
+	while (stack_tmp->group != data->group && (size_t)ft_abs(rr) <= data->stack_size)
 	{
 		stack_tmp = push_swap_prev(stack_tmp, 0);
 		--rr;
 	}
+	if (ft_abs(r) > ft_abs(rr))
+		data->stack_next = stack_tmp;
 	return ((ft_abs(r) <= ft_abs(rr)) ? r : rr);
 }
 

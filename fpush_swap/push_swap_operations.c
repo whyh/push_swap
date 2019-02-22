@@ -6,69 +6,74 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/17 20:36:54 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/02/22 14:47:19 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/02/22 19:18:52 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	push_swap_swap(t_push_swap_list **stack_a, t_push_swap_list **stack_b,
-		char **buff, char stack)
+void	push_swap_swap(t_push_swap_data *data, char stack)
 {
-	if (stack == 'a' || ((*stack_a)->value > (*stack_a)->next->value && (*stack_a)->value < (*stack_a)->next->next->value))
+	if (stack == 'a'
+	|| (data->stack_a->value > data->stack_a->next->value
+	&& data->stack_a->value < data->stack_a->next->next->value))
 	{
-		push_swap_ss(stack_a);
-		ft_strninject(buff, "sa ", -1, -1);
+		push_swap_ss(&(data->stack_a));
+		ft_strninject(&(data->buff), "sa ", -1, -1);
 	}
-	if (stack == 'b' || (*stack_b && (*stack_b)->value < (*stack_b)->next->value && (*stack_b)->value > (*stack_b)->next->next->value))
+	if (stack == 'b'
+	|| (data->stack_b && data->stack_b->value < data->stack_b->next->value
+	&& data->stack_b->value > data->stack_b->next->next->value))
 	{
-		push_swap_ss(stack_b);
-		ft_strninject(buff, "sb ", -1, -1);
+		push_swap_ss(&(data->stack_b));
+		ft_strninject(&(data->buff), "sb ", -1, -1);
 	}
 }
 
-void	push_swap_rotate_rev(t_push_swap_list **stack_a,
-		t_push_swap_list **stack_b, char **buff, char stack)
+void	push_swap_rotate_rev(t_push_swap_data *data, char stack)
 {
-//	push_swap_swap(stack_a, stack_b, buff, ' ');
 	if (stack == 'a')
 	{
-		push_swap_rrr(stack_a);
-		ft_strninject(buff, "rra ", -1, -1);
+		push_swap_rrr(&(data->stack_a));
+		ft_strninject(&(data->buff), "rra ", -1, -1);
 	}
-	else if (stack == 'b')
+	if (stack == 'b'
+	|| (data->stack_b
+	&& push_swap_prev(data->stack_b, data->group)->value > data->stack_b->value))
 	{
-		push_swap_rrr(stack_b);
-		ft_strninject(buff, "rrb ", -1, -1);
+		push_swap_rrr(&(data->stack_b));
+		ft_strninject(&(data->buff), "rrb ", -1, -1);
 	}
 }
 
-void	push_swap_rotate(t_push_swap_list **stack_a, t_push_swap_list **stack_b,
-		char **buff, char stack)
+void	push_swap_rotate(t_push_swap_data *data, char stack)
 {
-	if (stack == 'a')
+	if (stack == 'a'
+	|| (data->stack_next->value > data->stack_a->value))
 	{
-		push_swap_rr(stack_a);
-		ft_strninject(buff, "ra ", -1, -1);
+		push_swap_rr(&(data->stack_a));
+		ft_strninject(&(data->buff), "ra ", -1, -1);
 	}
-	else if (stack == 'b')
+	if (stack == 'b'
+	|| (data->stack_b && data->stack_next
+	&& data->stack_next->value < data->stack_b->value
+	&& data->stack_next->value > data->stack_b->next->value))
 	{
-		push_swap_rr(stack_b);
-		ft_strninject(buff, "rb ", -1, -1);
+		push_swap_rr(&(data->stack_b));
+		ft_strninject(&(data->buff), "rb ", -1, -1);
 	}
 }
 
-void	push_swap_push(t_push_swap_list **stack_a, t_push_swap_list **stack_b,
-		char **buff, char stack)
+void	push_swap_push(t_push_swap_data *data, char stack)
 {
 	if (stack == 'a')
 	{
-		push_swap_pp(stack_a, stack_b);
-		ft_strninject(buff, "pb ", -1, -1);
+		push_swap_pp(&(data->stack_a), &(data->stack_b));
+		ft_strninject(&(data->buff), "pb ", -1, -1);
 	}
 	else if (stack == 'b')
 	{
-		push_swap_pp(stack_b, stack_a);
-		ft_strninject(buff, "pa ", -1, -1);
+		push_swap_pp(&(data->stack_b), &(data->stack_a));
+		ft_strninject(&(data->buff), "pa ", -1, -1);
 	}
 }

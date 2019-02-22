@@ -14,5 +14,5 @@
 
 long long	ft_abs(long long nbr)
 {
-	return ((nbr > 0) ? nbr : -nbr);
+	return ((nbr >= 0) ? nbr : -nbr);
 }
