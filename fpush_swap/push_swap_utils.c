@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/17 20:26:51 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/02/17 21:14:45 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/02/21 15:29:56 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,13 +29,13 @@ int				push_swap_next(t_push_swap_list *stack, size_t group)
 	rr = 0;
 	while (stack_tmp->group != group)
 	{
-		stack_tmp = push_swap_prev(stack_tmp);
+		stack_tmp = push_swap_prev(stack_tmp, 0);
 		--rr;
 	}
 	return ((ft_abs(r) <= ft_abs(rr)) ? r : rr);
 }
 
-int				push_swap_sorted_b(t_push_swap_list *stack, size_t group)
+int				push_swap_sorted(t_push_swap_list *stack, size_t group)
 {
 	t_push_swap_list	*stack_tmp;
 
@@ -53,55 +53,61 @@ int				push_swap_sorted_b(t_push_swap_list *stack, size_t group)
 	return (1);
 }
 
-static int		push_swap_base_avg(t_push_swap_list *stack)
+static int		push_swap_base_avg(t_push_swap_list *stack, size_t group)
 {
 	t_push_swap_list	*stack_tmp;
-	int					max;
-	int					min;
+	int					n;
+	int					avg;
 
-	max = stack->value;
-	min = stack->value;
+	n = 1;
+	while (stack->group != group)
+		stack = stack->next;
+	avg = stack->value;
 	stack_tmp = stack->next;
 	while (stack_tmp != stack)
 	{
-		if (stack_tmp->value < min)
-			min = stack_tmp->value;
-		else if (stack_tmp->value > max)
-			max = stack_tmp->value;
+		if (stack_tmp->group == group)
+		{
+			avg += stack_tmp->value;
+			++n;
+		}
 		stack_tmp = stack_tmp->next;
 	}
-	return ((min + max) / 2);
+	return (avg / n);
 }
 
-static int		push_swap_get_avg(t_push_swap_list *stack, int avg)
+static int		push_swap_get_avg(t_push_swap_list *stack, int avg,
+				size_t group)
 {
 	t_push_swap_list	*stack_tmp;
 
 	stack_tmp = stack;
-	if (avg == stack_tmp->value)
+	if (stack_tmp->group == group && avg == stack_tmp->value)
 		return (1);
 	stack_tmp = stack_tmp->next;
 	while (stack_tmp != stack)
 	{
-		if (avg == stack_tmp->value)
+		if (stack_tmp->group == group && avg == stack_tmp->value)
 			return (1);
 		stack_tmp = stack_tmp->next;
 	}
 	return (0);
 }
 
-int				push_swap_avg(t_push_swap_list *stack)
+int				push_swap_avg(t_push_swap_list *stack, size_t group)
 {
-	int					err;
-	int					avg;
+	int	err;
+	int	avg;
 
-	avg = push_swap_base_avg(stack);
+	while (push_swap_sorted(stack, group))
+		--group;
+	avg = push_swap_base_avg(stack, group);
 	err = 0;
 	while (stack)
 	{
-		if (push_swap_get_avg(stack, avg + err))
+		if (push_swap_get_avg(stack, avg + err, group))
 			return (avg + err);
-		if (push_swap_get_avg(stack, avg - err))
+		if (push_swap_get_avg(stack, avg - err, group))
 			return (avg - err);
 		++err;
 	}

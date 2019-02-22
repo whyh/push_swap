@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/26 16:10:22 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/02/08 22:02:01 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/02/20 14:18:50 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 # define LLONG_MAX 9223372036854775807
 # define LLONG_MIN -9223372036854775808
 # define LLONG_MIN_S "-9223372036854775808"
+# define INT_MAX 2147483647
+# define INT_MIN -2147483648
 # define WHITESPACES "\011\012\013\040"
 # define ALPHABET "abcdefghijklmnopqrstuvwxyz"
 # define ALPHABET_CAP "ABCDEFGHIJKLMNOPQRSTUVWXYZ"

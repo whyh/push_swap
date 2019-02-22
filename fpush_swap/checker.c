@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/17 15:52:37 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/02/17 21:08:24 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/02/18 16:03:11 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ void	push_swap_exec(t_push_swap_list **stack_a, t_push_swap_list **stack_b,
 	else if (ft_strncmp(line, "sa", -1))
 		push_swap_ss(stack_a);
 	else if (ft_strncmp(line, "sb", -1))
-		push_swap_ss(stack_a);
+		push_swap_ss(stack_b);
 	else if (ft_strncmp(line, "ra", -1))
 		push_swap_rr(stack_a);
 	else if (ft_strncmp(line, "rb", -1))
@@ -96,15 +96,15 @@ int			main(int argc, char **argv)
 
 	if (argc < 2)
 	{
-		ft_printf("error: ...\n");
-		ft_printf("usage: ...\n");
+		ft_printf("error: invalid argument\n");
+		ft_printf("usage: ./push_swap \"1 3 2 4 5 7 6 8 0 9\"\n");
 		return (0);
 	}
 	if (!push_swap_parse(&stack, (size_t)(argc - 1), argv))
 	{
 		push_swap_free(&stack);
-		ft_printf("error: ...\n");
-		ft_printf("usage: ...\n");
+		ft_printf("error: invalid parameter\n");
+		ft_printf("usage: ./push_swap \"1 3 2 4 5 7 6 8 0 9\"\n");
 		return (0);
 	}
 	push_swap_checker(&stack);

@@ -14,10 +14,10 @@ add_executable(push_swap_clion
         ${LIBFT}
         ${FT_GNL}
         ${FT_PRINTF}
-#        fpush_swap/ft_checker.c
+#       fpush_swap/checker.c
         fpush_swap/push_swap.c
         fpush_swap/shared_funs.c
         fpush_swap/push_swap_operations.c
         fpush_swap/push_swap_utils.c
         fpush_swap/operations.c
-        )
+        fpush_swap/shared_parse.c)

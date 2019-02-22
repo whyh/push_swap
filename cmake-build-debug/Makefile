@@ -258,6 +258,33 @@ fpush_swap/shared_funs.c.s:
 	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/shared_funs.c.s
 .PHONY : fpush_swap/shared_funs.c.s
 
+fpush_swap/shared_parse.o: fpush_swap/shared_parse.c.o
+
+.PHONY : fpush_swap/shared_parse.o
+
+# target to build an object file
+fpush_swap/shared_parse.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/shared_parse.c.o
+.PHONY : fpush_swap/shared_parse.c.o
+
+fpush_swap/shared_parse.i: fpush_swap/shared_parse.c.i
+
+.PHONY : fpush_swap/shared_parse.i
+
+# target to preprocess a source file
+fpush_swap/shared_parse.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/shared_parse.c.i
+.PHONY : fpush_swap/shared_parse.c.i
+
+fpush_swap/shared_parse.s: fpush_swap/shared_parse.c.s
+
+.PHONY : fpush_swap/shared_parse.s
+
+# target to generate assembly for a file
+fpush_swap/shared_parse.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/shared_parse.c.s
+.PHONY : fpush_swap/shared_parse.c.s
+
 libft/ft_abs.o: libft/ft_abs.c.o
 
 .PHONY : libft/ft_abs.o
@@ -1362,6 +1389,9 @@ help:
 	@echo "... fpush_swap/shared_funs.o"
 	@echo "... fpush_swap/shared_funs.i"
 	@echo "... fpush_swap/shared_funs.s"
+	@echo "... fpush_swap/shared_parse.o"
+	@echo "... fpush_swap/shared_parse.i"
+	@echo "... fpush_swap/shared_parse.s"
 	@echo "... libft/ft_abs.o"
 	@echo "... libft/ft_abs.i"
 	@echo "... libft/ft_abs.s"

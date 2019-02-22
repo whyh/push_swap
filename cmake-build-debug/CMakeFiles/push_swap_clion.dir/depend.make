@@ -46,6 +46,15 @@ CMakeFiles/push_swap_clion.dir/fpush_swap/shared_funs.c.o: ../libft/ft_printf/ft
 CMakeFiles/push_swap_clion.dir/fpush_swap/shared_funs.c.o: ../libft/libft.h
 CMakeFiles/push_swap_clion.dir/fpush_swap/shared_funs.c.o: ../libft/libft_typedefs.h
 
+CMakeFiles/push_swap_clion.dir/fpush_swap/shared_parse.c.o: ../fpush_swap/push_swap.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/shared_parse.c.o: ../fpush_swap/push_swap_typedefs.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/shared_parse.c.o: ../fpush_swap/shared_parse.c
+CMakeFiles/push_swap_clion.dir/fpush_swap/shared_parse.c.o: ../libft/ft_gnl/ft_gnl_typedefs.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/shared_parse.c.o: ../libft/ft_printf/ft_printf.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/shared_parse.c.o: ../libft/ft_printf/ft_printf_typedefs.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/shared_parse.c.o: ../libft/libft.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/shared_parse.c.o: ../libft/libft_typedefs.h
+
 CMakeFiles/push_swap_clion.dir/libft/ft_abs.c.o: ../libft/ft_abs.c
 CMakeFiles/push_swap_clion.dir/libft/ft_abs.c.o: ../libft/ft_gnl/ft_gnl_typedefs.h
 CMakeFiles/push_swap_clion.dir/libft/ft_abs.c.o: ../libft/ft_printf/ft_printf.h

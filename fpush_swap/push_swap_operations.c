@@ -6,21 +6,21 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/17 20:36:54 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/02/17 21:08:24 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/02/22 14:47:19 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
 void	push_swap_swap(t_push_swap_list **stack_a, t_push_swap_list **stack_b,
-		char **buff)
+		char **buff, char stack)
 {
-	if ((*stack_a)->value > (*stack_a)->next->value)
+	if (stack == 'a' || ((*stack_a)->value > (*stack_a)->next->value && (*stack_a)->value < (*stack_a)->next->next->value))
 	{
 		push_swap_ss(stack_a);
 		ft_strninject(buff, "sa ", -1, -1);
 	}
-	if (*stack_b && (*stack_b)->value < (*stack_b)->next->value)
+	if (stack == 'b' || (*stack_b && (*stack_b)->value < (*stack_b)->next->value && (*stack_b)->value > (*stack_b)->next->next->value))
 	{
 		push_swap_ss(stack_b);
 		ft_strninject(buff, "sb ", -1, -1);
@@ -30,6 +30,7 @@ void	push_swap_swap(t_push_swap_list **stack_a, t_push_swap_list **stack_b,
 void	push_swap_rotate_rev(t_push_swap_list **stack_a,
 		t_push_swap_list **stack_b, char **buff, char stack)
 {
+//	push_swap_swap(stack_a, stack_b, buff, ' ');
 	if (stack == 'a')
 	{
 		push_swap_rrr(stack_a);

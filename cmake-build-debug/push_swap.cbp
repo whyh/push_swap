@@ -100,6 +100,9 @@
 		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/shared_funs.c">
 			<Option target="push_swap_clion"/>
 		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/shared_parse.c">
+			<Option target="push_swap_clion"/>
+		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/libft/ft_abs.c">
 			<Option target="push_swap_clion"/>
 		</Unit>

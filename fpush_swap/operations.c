@@ -19,7 +19,7 @@ void	push_swap_rr(t_push_swap_list **stack)
 
 void	push_swap_rrr(t_push_swap_list **stack)
 {
-	*stack = push_swap_prev(*stack);
+	*stack = push_swap_prev(*stack, 0);
 }
 
 void	push_swap_ss(t_push_swap_list **stack)
@@ -27,7 +27,7 @@ void	push_swap_ss(t_push_swap_list **stack)
 	t_push_swap_list	*stack_tmp;
 	t_push_swap_list	*stack_prev;
 
-	stack_prev = push_swap_prev(*stack);
+	stack_prev = push_swap_prev(*stack, 0);
 	stack_tmp = (*stack)->next;
 	stack_prev->next = stack_tmp;
 	(*stack)->next = stack_tmp->next;
@@ -41,8 +41,8 @@ void	push_swap_pp(t_push_swap_list **stack_from, t_push_swap_list **stack_to)
 	t_push_swap_list	*stack_prev_from;
 	t_push_swap_list	*stack_prev_to;
 
-	stack_prev_from = push_swap_prev(*stack_from);
-	stack_prev_to = push_swap_prev(*stack_to);
+	stack_prev_from = push_swap_prev(*stack_from, 0);
+	stack_prev_to = push_swap_prev(*stack_to, 0);
 	stack_tmp = *stack_from;
 	*stack_from = stack_tmp->next;
 	stack_prev_from->next = stack_tmp->next;

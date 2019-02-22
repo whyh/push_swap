@@ -44,6 +44,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_operations.c.o"
   "CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_utils.c.o"
   "CMakeFiles/push_swap_clion.dir/fpush_swap/operations.c.o"
+  "CMakeFiles/push_swap_clion.dir/fpush_swap/shared_parse.c.o"
   "push_swap_clion.pdb"
   "push_swap_clion"
 )
