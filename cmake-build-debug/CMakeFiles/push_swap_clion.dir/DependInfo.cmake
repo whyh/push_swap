@@ -4,12 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/checker.c.o"
   "/Users/dderevyn/CLionProjects/push_swap/fpush_swap/operations.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/operations.c.o"
-  "/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap.c.o"
   "/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap_operations.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_operations.c.o"
   "/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap_utils.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_utils.c.o"
   "/Users/dderevyn/CLionProjects/push_swap/fpush_swap/shared_funs.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/shared_funs.c.o"
   "/Users/dderevyn/CLionProjects/push_swap/fpush_swap/shared_parse.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/shared_parse.c.o"
+  "/Users/dderevyn/CLionProjects/push_swap/fpush_swap/visualisation.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/visualisation.c.o"
   "/Users/dderevyn/CLionProjects/push_swap/libft/ft_abs.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/libft/ft_abs.c.o"
   "/Users/dderevyn/CLionProjects/push_swap/libft/ft_atoibase.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/libft/ft_atoibase.c.o"
   "/Users/dderevyn/CLionProjects/push_swap/libft/ft_gnl/ft_gnl.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/libft/ft_gnl/ft_gnl.c.o"

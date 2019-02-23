@@ -66,15 +66,14 @@ static int	push_swap_parse_arg(t_push_swap_list **stack, char *arg, int flag)
 	return (1);
 }
 
-int			push_swap_parse(t_push_swap_list **stack, size_t argc, char **argv)
+int			push_swap_parse(t_push_swap_list **stack, size_t argc, char **argv,
+			size_t i)
 {
 	t_push_swap_list	*tail;
-	size_t				i;
 	int					flag;
 
 	*stack = ft_memalloc(sizeof(t_push_swap_list));
 	(*stack)->next = NULL;
-	i = 1;
 	flag = 0;
 	while (i <= argc)
 	{

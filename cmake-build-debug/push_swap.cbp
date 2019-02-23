@@ -82,13 +82,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker.c">
+			<Option target="push_swap_clion"/>
+		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/operations.c">
-			<Option target="push_swap_clion"/>
-		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap.c">
-			<Option target="push_swap_clion"/>
-		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap.h">
 			<Option target="push_swap_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap_operations.c">
@@ -101,6 +98,9 @@
 			<Option target="push_swap_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/shared_parse.c">
+			<Option target="push_swap_clion"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/visualisation.c">
 			<Option target="push_swap_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/libft/ft_abs.c">

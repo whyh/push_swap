@@ -213,6 +213,12 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
 
 //Value Computed by CMake
+fdf_clion_BINARY_DIR:STATIC=/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug
+
+//Value Computed by CMake
+fdf_clion_SOURCE_DIR:STATIC=/Users/dderevyn/CLionProjects/push_swap
+
+//Value Computed by CMake
 push_swap_BINARY_DIR:STATIC=/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug
 
 //Value Computed by CMake

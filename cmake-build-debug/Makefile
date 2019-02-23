@@ -123,6 +123,33 @@ push_swap_clion/fast:
 	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/build
 .PHONY : push_swap_clion/fast
 
+fpush_swap/checker.o: fpush_swap/checker.c.o
+
+.PHONY : fpush_swap/checker.o
+
+# target to build an object file
+fpush_swap/checker.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/checker.c.o
+.PHONY : fpush_swap/checker.c.o
+
+fpush_swap/checker.i: fpush_swap/checker.c.i
+
+.PHONY : fpush_swap/checker.i
+
+# target to preprocess a source file
+fpush_swap/checker.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/checker.c.i
+.PHONY : fpush_swap/checker.c.i
+
+fpush_swap/checker.s: fpush_swap/checker.c.s
+
+.PHONY : fpush_swap/checker.s
+
+# target to generate assembly for a file
+fpush_swap/checker.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/checker.c.s
+.PHONY : fpush_swap/checker.c.s
+
 fpush_swap/operations.o: fpush_swap/operations.c.o
 
 .PHONY : fpush_swap/operations.o
@@ -149,33 +176,6 @@ fpush_swap/operations.s: fpush_swap/operations.c.s
 fpush_swap/operations.c.s:
 	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/operations.c.s
 .PHONY : fpush_swap/operations.c.s
-
-fpush_swap/push_swap.o: fpush_swap/push_swap.c.o
-
-.PHONY : fpush_swap/push_swap.o
-
-# target to build an object file
-fpush_swap/push_swap.c.o:
-	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap.c.o
-.PHONY : fpush_swap/push_swap.c.o
-
-fpush_swap/push_swap.i: fpush_swap/push_swap.c.i
-
-.PHONY : fpush_swap/push_swap.i
-
-# target to preprocess a source file
-fpush_swap/push_swap.c.i:
-	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap.c.i
-.PHONY : fpush_swap/push_swap.c.i
-
-fpush_swap/push_swap.s: fpush_swap/push_swap.c.s
-
-.PHONY : fpush_swap/push_swap.s
-
-# target to generate assembly for a file
-fpush_swap/push_swap.c.s:
-	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap.c.s
-.PHONY : fpush_swap/push_swap.c.s
 
 fpush_swap/push_swap_operations.o: fpush_swap/push_swap_operations.c.o
 
@@ -284,6 +284,33 @@ fpush_swap/shared_parse.s: fpush_swap/shared_parse.c.s
 fpush_swap/shared_parse.c.s:
 	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/shared_parse.c.s
 .PHONY : fpush_swap/shared_parse.c.s
+
+fpush_swap/visualisation.o: fpush_swap/visualisation.c.o
+
+.PHONY : fpush_swap/visualisation.o
+
+# target to build an object file
+fpush_swap/visualisation.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/visualisation.c.o
+.PHONY : fpush_swap/visualisation.c.o
+
+fpush_swap/visualisation.i: fpush_swap/visualisation.c.i
+
+.PHONY : fpush_swap/visualisation.i
+
+# target to preprocess a source file
+fpush_swap/visualisation.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/visualisation.c.i
+.PHONY : fpush_swap/visualisation.c.i
+
+fpush_swap/visualisation.s: fpush_swap/visualisation.c.s
+
+.PHONY : fpush_swap/visualisation.s
+
+# target to generate assembly for a file
+fpush_swap/visualisation.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/visualisation.c.s
+.PHONY : fpush_swap/visualisation.c.s
 
 libft/ft_abs.o: libft/ft_abs.c.o
 
@@ -1374,12 +1401,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... push_swap_clion"
+	@echo "... fpush_swap/checker.o"
+	@echo "... fpush_swap/checker.i"
+	@echo "... fpush_swap/checker.s"
 	@echo "... fpush_swap/operations.o"
 	@echo "... fpush_swap/operations.i"
 	@echo "... fpush_swap/operations.s"
-	@echo "... fpush_swap/push_swap.o"
-	@echo "... fpush_swap/push_swap.i"
-	@echo "... fpush_swap/push_swap.s"
 	@echo "... fpush_swap/push_swap_operations.o"
 	@echo "... fpush_swap/push_swap_operations.i"
 	@echo "... fpush_swap/push_swap_operations.s"
@@ -1392,6 +1419,9 @@ help:
 	@echo "... fpush_swap/shared_parse.o"
 	@echo "... fpush_swap/shared_parse.i"
 	@echo "... fpush_swap/shared_parse.s"
+	@echo "... fpush_swap/visualisation.o"
+	@echo "... fpush_swap/visualisation.i"
+	@echo "... fpush_swap/visualisation.s"
 	@echo "... libft/ft_abs.o"
 	@echo "... libft/ft_abs.i"
 	@echo "... libft/ft_abs.s"
