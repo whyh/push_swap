@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/26 16:10:22 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/02/16 19:12:00 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/02/25 20:23:01 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include "libft_typedefs.h"
 # include "ft_gnl/ft_gnl_typedefs.h"
 # include "ft_printf/ft_printf.h"
+# include "vis/vis.h"
 
 int			ft_gnl(const int fd, char **line);
 int			ft_printf(const char *format, ...);
@@ -49,5 +50,7 @@ long long	ft_strnin(const char *str, const char *obj, long long field,
 void		ft_strninject(char **dst, const char *src, long pos, long n);
 void		ft_strfrepl(char **buff, char *targ, char *repl, long long field);
 char		*ft_strrchr(const char *str, char c);
+void		ft_swap_ll(long long *ptr1, long long *ptr2);
+void		ft_swap_i(int *ptr1, int *ptr2);
 
 #endif

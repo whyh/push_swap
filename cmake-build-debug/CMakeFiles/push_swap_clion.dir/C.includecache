@@ -6,35 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker.c
-push_swap.h
-/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap.h
-
-/Users/dderevyn/CLionProjects/push_swap/fpush_swap/operations.c
-push_swap.h
-/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap.h
-
 /Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap.h
 ../libft/libft.h
 /Users/dderevyn/CLionProjects/push_swap/libft/libft.h
 push_swap_typedefs.h
 /Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap_typedefs.h
 
-/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap_operations.c
-push_swap.h
-/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap.h
-
 /Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap_typedefs.h
 
-/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap_utils.c
-push_swap.h
-/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap.h
-
-/Users/dderevyn/CLionProjects/push_swap/fpush_swap/shared_funs.c
-push_swap.h
-/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap.h
-
-/Users/dderevyn/CLionProjects/push_swap/fpush_swap/shared_parse.c
+/Users/dderevyn/CLionProjects/push_swap/fpush_swap/vis.c
 push_swap.h
 /Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap.h
 
@@ -73,6 +53,22 @@ ft_gnl/ft_gnl_typedefs.h
 /Users/dderevyn/CLionProjects/push_swap/libft/ft_gnl/ft_gnl_typedefs.h
 ft_printf/ft_printf.h
 /Users/dderevyn/CLionProjects/push_swap/libft/ft_printf/ft_printf.h
+vis/vis.h
+/Users/dderevyn/CLionProjects/push_swap/libft/vis/vis.h
 
 /Users/dderevyn/CLionProjects/push_swap/libft/libft_typedefs.h
+
+/Users/dderevyn/CLionProjects/push_swap/libft/vis/vis.h
+../libft.h
+/Users/dderevyn/CLionProjects/push_swap/libft/libft.h
+mlx.h
+-
+vis_typedefs.h
+/Users/dderevyn/CLionProjects/push_swap/libft/vis/vis_typedefs.h
+
+/Users/dderevyn/CLionProjects/push_swap/libft/vis/vis_typedefs.h
+../libft.h
+/Users/dderevyn/CLionProjects/push_swap/libft/libft.h
+math.h
+/Users/dderevyn/CLionProjects/push_swap/libft/vis/math.h
 

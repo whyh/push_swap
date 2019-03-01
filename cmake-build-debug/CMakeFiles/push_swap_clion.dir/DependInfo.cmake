@@ -10,7 +10,10 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap_utils.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_utils.c.o"
   "/Users/dderevyn/CLionProjects/push_swap/fpush_swap/shared_funs.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/shared_funs.c.o"
   "/Users/dderevyn/CLionProjects/push_swap/fpush_swap/shared_parse.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/shared_parse.c.o"
-  "/Users/dderevyn/CLionProjects/push_swap/fpush_swap/visualisation.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/visualisation.c.o"
+  "/Users/dderevyn/CLionProjects/push_swap/fpush_swap/vis.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/vis.c.o"
+  "/Users/dderevyn/CLionProjects/push_swap/fpush_swap/vis_draw_bg.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/vis_draw_bg.c.o"
+  "/Users/dderevyn/CLionProjects/push_swap/fpush_swap/vis_draw_stack.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/vis_draw_stack.c.o"
+  "/Users/dderevyn/CLionProjects/push_swap/fpush_swap/vis_utils.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/vis_utils.c.o"
   "/Users/dderevyn/CLionProjects/push_swap/libft/ft_abs.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/libft/ft_abs.c.o"
   "/Users/dderevyn/CLionProjects/push_swap/libft/ft_atoibase.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/libft/ft_atoibase.c.o"
   "/Users/dderevyn/CLionProjects/push_swap/libft/ft_gnl/ft_gnl.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/libft/ft_gnl/ft_gnl.c.o"
@@ -51,6 +54,9 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/dderevyn/CLionProjects/push_swap/libft/ft_strnin.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/libft/ft_strnin.c.o"
   "/Users/dderevyn/CLionProjects/push_swap/libft/ft_strninject.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/libft/ft_strninject.c.o"
   "/Users/dderevyn/CLionProjects/push_swap/libft/ft_strrchr.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/libft/ft_strrchr.c.o"
+  "/Users/dderevyn/CLionProjects/push_swap/libft/ft_swap.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/libft/ft_swap.c.o"
+  "/Users/dderevyn/CLionProjects/push_swap/libft/vis/ft_line_gradient.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/libft/vis/ft_line_gradient.c.o"
+  "/Users/dderevyn/CLionProjects/push_swap/libft/vis/ft_wu_line_circle.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/libft/vis/ft_wu_line_circle.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

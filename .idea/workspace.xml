@@ -12,17 +12,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e317297-ea44-47ca-bb87-104f32822e89" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/fpush_swap/vis.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.push_swap_objects/checker.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.push_swap_objects/push_swap.o" beforeDir="false" afterPath="$PROJECT_DIR$/.push_swap_objects/push_swap.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.push_swap_objects/push_swap_operations.o" beforeDir="false" afterPath="$PROJECT_DIR$/.push_swap_objects/push_swap_operations.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.push_swap_objects/push_swap_utils.o" beforeDir="false" afterPath="$PROJECT_DIR$/.push_swap_objects/push_swap_utils.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.push_swap_objects/shared_funs.o" beforeDir="false" afterPath="$PROJECT_DIR$/.push_swap_objects/shared_funs.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.push_swap_objects/shared_parse.o" beforeDir="false" afterPath="$PROJECT_DIR$/.push_swap_objects/shared_parse.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.push_swap_objects/checker.o" beforeDir="false" afterPath="$PROJECT_DIR$/.push_swap_objects/checker.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker" beforeDir="false" afterPath="$PROJECT_DIR$/checker" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_clion.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_clion.dir/C.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_clion.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_clion.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_clion.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_clion.dir/build.make" afterDir="false" />
@@ -30,26 +28,48 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_clion.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_clion.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_clion.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_clion.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/checker.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/checker.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/operations.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/operations.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_operations.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_operations.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_utils.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_utils.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/shared_funs.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/shared_funs.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/shared_parse.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/shared_parse.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_clion.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_clion.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_clion.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_clion.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/push_swap.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/push_swap.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/push_swap_clion" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/push_swap_clion" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fpush_swap/checker.c" beforeDir="false" afterPath="$PROJECT_DIR$/fpush_swap/checker.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fpush_swap/operations.c" beforeDir="false" afterPath="$PROJECT_DIR$/fpush_swap/operations.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fpush_swap/push_swap.c" beforeDir="false" afterPath="$PROJECT_DIR$/fpush_swap/push_swap.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fpush_swap/push_swap.h" beforeDir="false" afterPath="$PROJECT_DIR$/fpush_swap/push_swap.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fpush_swap/push_swap_operations.c" beforeDir="false" afterPath="$PROJECT_DIR$/fpush_swap/push_swap_operations.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fpush_swap/push_swap_typedefs.h" beforeDir="false" afterPath="$PROJECT_DIR$/fpush_swap/push_swap_typedefs.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fpush_swap/push_swap_utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/fpush_swap/push_swap_utils.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fpush_swap/shared_funs.c" beforeDir="false" afterPath="$PROJECT_DIR$/fpush_swap/shared_funs.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fpush_swap/shared_parse.c" beforeDir="false" afterPath="$PROJECT_DIR$/fpush_swap/shared_parse.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fpush_swap/visualisation.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libft/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libft/libft.a" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/push_swap" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft.h" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mlx/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mlx/_README_" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mlx/font.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mlx/font.xcf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mlx/libmlx.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mlx/man/man1/mlx.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mlx/man/man1/mlx_loop.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mlx/man/man1/mlx_new_image.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mlx/man/man1/mlx_new_window.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mlx/man/man1/mlx_pixel_put.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mlx/man/man3/mlx.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mlx/man/man3/mlx_loop.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mlx/man/man3/mlx_new_image.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mlx/man/man3/mlx_new_window.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mlx/man/man3/mlx_pixel_put.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mlx/mlx.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mlx/mlx_init_loop.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mlx/mlx_int.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mlx/mlx_int_str_to_wordtab.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mlx/mlx_new_image.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mlx/mlx_new_window.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mlx/mlx_new_window.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mlx/mlx_rgb.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mlx/mlx_shaders.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mlx/mlx_xpm.c" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,41 +94,53 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.56586087">
+    <splitter split-orientation="horizontal" split-proportion="0.40645823">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/libft/libft.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="373">
-                  <caret line="48" column="69" selection-start-line="48" selection-start-column="69" selection-end-line="48" selection-end-column="69" />
+                <state relative-caret-position="780">
+                  <caret line="52" column="54" selection-start-line="52" selection-start-column="54" selection-end-line="52" selection-end-column="54" />
+                  <folding>
+                    <element signature="e#926#946#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/fpush_swap/operations.c">
+            <entry file="file://$PROJECT_DIR$/libft/vis/ft_line_gradient.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="855">
-                  <caret line="57" selection-start-line="57" selection-end-line="57" />
+                <state relative-caret-position="315">
+                  <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/fpush_swap/push_swap.c">
+            <entry file="file://$PROJECT_DIR$/fpush_swap/checker.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="225">
-                  <caret line="228" column="1" selection-start-line="228" selection-start-column="1" selection-end-line="228" selection-end-column="1" />
+                <state relative-caret-position="756">
+                  <caret line="120" column="48" selection-start-line="120" selection-start-column="48" selection-end-line="120" selection-end-column="48" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/fpush_swap/checker.c">
+            <entry file="file://$PROJECT_DIR$/fpush_swap/vis.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="574">
-                  <caret line="172" column="15" lean-forward="true" selection-start-line="172" selection-start-column="15" selection-end-line="172" selection-end-column="15" />
+                <state relative-caret-position="538">
+                  <caret line="89" column="24" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/fpush_swap/vis_draw_stack.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="345">
+                  <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
                 </state>
               </provider>
             </entry>
@@ -117,11 +149,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="285">
-                  <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+                <state relative-caret-position="405">
+                  <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
                 </state>
               </provider>
             </entry>
@@ -129,8 +161,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Makefile">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="957">
-                  <caret line="279" column="21" selection-start-line="279" selection-start-column="21" selection-end-line="279" selection-end-column="21" />
+                <state relative-caret-position="392">
+                  <caret line="123" column="2507" selection-start-line="123" selection-start-column="8" selection-end-line="123" selection-end-column="2507" />
                 </state>
               </provider>
             </entry>
@@ -138,53 +170,62 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/fpush_swap/push_swap.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="16" selection-start-line="16" selection-end-line="16" />
+                <state relative-caret-position="795">
+                  <caret line="53" selection-start-line="53" selection-end-line="53" />
+                  <folding>
+                    <element signature="e#934#962#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/fpush_swap/shared_parse.c">
+            <entry file="file://$PROJECT_DIR$/libft/Makefile">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="570">
-                  <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
+                <state relative-caret-position="392">
+                  <caret line="80" column="32" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/fpush_swap/push_swap_typedefs.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="585">
-                  <caret line="39" column="47" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="47" />
+                <state relative-caret-position="772">
+                  <caret line="55" column="34" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/fpush_swap/push_swap_utils.c">
+            <entry file="file://$PROJECT_DIR$/libft/vis/vis_typedefs.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="82" column="1" selection-start-line="82" selection-start-column="1" selection-end-line="82" selection-end-column="1" />
+                <state relative-caret-position="390">
+                  <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+                  <folding>
+                    <element signature="e#940#962#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/fpush_swap/push_swap_operations.c">
+            <entry file="file://$PROJECT_DIR$/libft/vis/vis.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="458">
-                  <caret line="34" selection-start-line="34" selection-end-line="34" />
+                <state relative-caret-position="330">
+                  <caret line="22" selection-start-line="22" selection-end-line="22" />
+                  <folding>
+                    <element signature="e#922#944#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/fpush_swap/shared_funs.c">
+            <entry file="file://$PROJECT_DIR$/fpush_swap/vis_utils.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="407">
-                  <caret line="29" selection-start-line="29" selection-end-line="29" />
+                <state relative-caret-position="847">
+                  <caret line="87" column="35" selection-start-line="87" selection-start-column="35" selection-end-line="87" selection-end-column="35" />
                 </state>
               </provider>
             </entry>
@@ -202,26 +243,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/push_swap/push_swap_push.c" />
-        <option value="$PROJECT_DIR$/lftgit/ft_atoi.c" />
-        <option value="$PROJECT_DIR$/push_swap/ft_push.c" />
-        <option value="$PROJECT_DIR$/push_swap/ft_swap.c" />
-        <option value="$PROJECT_DIR$/push_swap/ft_push_swap_checker.c" />
-        <option value="$PROJECT_DIR$/е" />
-        <option value="$PROJECT_DIR$/push_swap/operations/ft_rrr.c" />
-        <option value="$PROJECT_DIR$/push_swap/operations/ft_rr.c" />
-        <option value="$PROJECT_DIR$/push_swap/ft_push_swap.h" />
-        <option value="$PROJECT_DIR$/libft/ft_strnin.c" />
-        <option value="$PROJECT_DIR$/libft/ft_replace.c" />
-        <option value="$PROJECT_DIR$/libft/ft_nbr_len.c" />
-        <option value="$PROJECT_DIR$/libft/ft_strnrepl.c" />
-        <option value="$PROJECT_DIR$/libft/libft.h" />
-        <option value="$PROJECT_DIR$/push_swap/operations/ft_ss.c" />
-        <option value="$PROJECT_DIR$/../ft_printf/main.c" />
-        <option value="$PROJECT_DIR$/push_swap/operations/ft_pp.c" />
-        <option value="$PROJECT_DIR$/libft/ft_strneject.c" />
         <option value="$PROJECT_DIR$/push_swap/ft_push_swap.c" />
-        <option value="$PROJECT_DIR$/libft/Makefile" />
         <option value="$PROJECT_DIR$/libft/ft_strfrepl.c" />
         <option value="$PROJECT_DIR$/fpush_swap/ft_push_swap.h" />
         <option value="$PROJECT_DIR$/fpush_swap/ft_push_swap.c" />
@@ -238,21 +260,48 @@
         <option value="$PROJECT_DIR$/fpush_swap/shared_funs.c" />
         <option value="$PROJECT_DIR$/fpush_swap/push_swap_utils.c" />
         <option value="$PROJECT_DIR$/fpush_swap/operations.c" />
-        <option value="$PROJECT_DIR$/Makefile" />
         <option value="$PROJECT_DIR$/fpush_swap/shared_parse.c" />
         <option value="$PROJECT_DIR$/fpush_swap/push_swap.c" />
-        <option value="$PROJECT_DIR$/fpush_swap/push_swap_typedefs.h" />
-        <option value="$PROJECT_DIR$/fpush_swap/push_swap.h" />
+        <option value="$PROJECT_DIR$/fpush_swap/visualisation.c" />
+        <option value="$PROJECT_DIR$/libft/ft_integer.c" />
+        <option value="$PROJECT_DIR$/libft/mlx/mlx_typedefs.h" />
+        <option value="$PROJECT_DIR$/libft/mlx/ft_xiaolin_wu_line.c" />
+        <option value="$PROJECT_DIR$/libft/mlx/mlx.h" />
+        <option value="$PROJECT_DIR$/libft/visualisation/mlx.h" />
+        <option value="$PROJECT_DIR$/libft/visualisation/visualisation.h" />
+        <option value="$PROJECT_DIR$/libft/visualisation/visualisation_typedefs.h" />
+        <option value="$PROJECT_DIR$/libft/visualisation/ft_xiaolin_wu_line.c" />
+        <option value="$PROJECT_DIR$/libft/vis/visualisation.h" />
+        <option value="$PROJECT_DIR$/libft/vis/visualisation_typedefs.h" />
+        <option value="$PROJECT_DIR$/libft/vis/gradient.c" />
+        <option value="$PROJECT_DIR$/libft/libft.h" />
+        <option value="$PROJECT_DIR$/libft/vis/lineargrad.c" />
+        <option value="$PROJECT_DIR$/libft/vis/draw_line.c" />
+        <option value="$PROJECT_DIR$/libft/vis/ft_xiaolin_wu_line.c" />
+        <option value="$PROJECT_DIR$/libft/vis/ft_line_gradient.c" />
+        <option value="$PROJECT_DIR$/libft/ft_swap.c" />
+        <option value="$PROJECT_DIR$/libft/vis/vis_typedefs.h" />
+        <option value="$PROJECT_DIR$/libft/vis/ft_draw_line.c" />
+        <option value="$PROJECT_DIR$/libft/vis/vis.h" />
+        <option value="$PROJECT_DIR$/libft/Makefile" />
+        <option value="$PROJECT_DIR$/libft/vis/ft_wu_line_circle.c" />
+        <option value="$PROJECT_DIR$/fpush_swap/vis_draw_bg.c" />
+        <option value="$PROJECT_DIR$/fpush_swap/vis_draw_stack.cpp" />
+        <option value="$PROJECT_DIR$/Makefile" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/fpush_swap/push_swap.h" />
         <option value="$PROJECT_DIR$/fpush_swap/checker.c" />
+        <option value="$PROJECT_DIR$/fpush_swap/vis_utils.c" />
+        <option value="$PROJECT_DIR$/fpush_swap/push_swap_typedefs.h" />
+        <option value="$PROJECT_DIR$/fpush_swap/vis.c" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="59" />
+    <option name="x" value="193" />
     <option name="y" value="23" />
-    <option name="width" value="2342" />
+    <option name="width" value="2280" />
     <option name="height" value="1417" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -264,6 +313,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -271,22 +321,41 @@
               <item name="push_swap" type="b2602c69:ProjectViewProjectNode" />
               <item name="push_swap" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="push_swap" type="b2602c69:ProjectViewProjectNode" />
+              <item name="push_swap" type="462c0819:PsiDirectoryNode" />
+              <item name="fpush_swap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="push_swap" type="b2602c69:ProjectViewProjectNode" />
+              <item name="push_swap" type="462c0819:PsiDirectoryNode" />
+              <item name="libft" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="push_swap" type="b2602c69:ProjectViewProjectNode" />
+              <item name="push_swap" type="462c0819:PsiDirectoryNode" />
+              <item name="libft" type="462c0819:PsiDirectoryNode" />
+              <item name="vis" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="PyConsoleConfigurable.Python Console" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/libft/vis" />
       <recent name="$PROJECT_DIR$/fpush_swap" />
       <recent name="$PROJECT_DIR$/push_swap" />
     </key>
@@ -304,7 +373,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.push_swap">
-    <configuration name="push_swap" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-t 3 2 1" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="push_swap" TARGET_NAME="push_swap_clion" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="push_swap" RUN_TARGET_NAME="push_swap_clion">
+    <configuration name="push_swap" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-v 3 1 2" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="push_swap" TARGET_NAME="push_swap_clion" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="push_swap" RUN_TARGET_NAME="push_swap_clion">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -342,11 +411,25 @@
       <workItem from="1550750167077" duration="28712000" />
       <workItem from="1550833615180" duration="31191000" />
       <workItem from="1550919914826" duration="31127000" />
+      <workItem from="1550956582331" duration="478000" />
+      <workItem from="1551088892909" duration="2439000" />
+      <workItem from="1551096627949" duration="16442000" />
+      <workItem from="1551118853225" duration="5489000" />
+      <workItem from="1551277557065" duration="15250000" />
+      <workItem from="1551351942653" duration="16243000" />
+      <workItem from="1551371423638" duration="1212000" />
+      <workItem from="1551378271827" duration="14000" />
+      <workItem from="1551441068180" duration="17000" />
+      <workItem from="1551441136962" duration="19000" />
+      <workItem from="1551441194415" duration="183000" />
+      <workItem from="1551441456664" duration="72000" />
+      <workItem from="1551441553446" duration="4691000" />
+      <workItem from="1551446508863" duration="3823000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211672000" />
+    <option name="totallyTimeSpent" value="278044000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -358,29 +441,30 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="59" y="23" width="2342" height="1417" extended-state="0" />
+    <frame x="193" y="23" width="2280" height="1417" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" x="1072" y="69" width="246" height="1325" id="Project" order="0" sideWeight="0.4993758" visible="true" weight="0.118695654" />
+      <window_info content_ui="combo" x="1072" y="69" width="246" height="1325" id="Project" order="0" sideWeight="0.4993758" visible="true" weight="0.13538875" />
       <window_info id="Structure" order="1" sideWeight="0.50062424" side_tool="true" weight="0.116956525" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32981133" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.23698114" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.46113208" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.51773584" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32981133" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.47018868" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.21207547" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32981133" />
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.3290566" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32981133" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.32830188" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.365283" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" weight="0.3295107" />
-      <window_info anchor="right" id="make" order="4" />
+      <window_info anchor="right" id="make" order="4" weight="0.3297587" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" x="1072" y="69" width="246" height="1325" id="Project" order="0" visible="true" weight="0.116956525" />
@@ -419,27 +503,26 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/fpush_swap/push_swap.c</url>
-          <line>46</line>
+          <line>34</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/fpush_swap/push_swap.c</url>
-          <line>75</line>
+          <line>68</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/fpush_swap/checker.c</url>
-          <line>151</line>
-          <option name="timeStamp" value="27" />
+          <url>file://$PROJECT_DIR$/libft/vis/vis_typedefs.h</url>
+          <line>30</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/fpush_swap/vis.c</url>
+          <line>145</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="CMakeRunConfiguration">
-        <watch expression="data-&gt;stack_a" />
-        <watch expression="data-&gt;stack_a" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
@@ -503,32 +586,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/libft/ft_linetrim.c" />
-    <entry file="file://$PROJECT_DIR$/libft/ft_memccpy.c" />
-    <entry file="file://$PROJECT_DIR$/libft/ft_memcpy.c" />
-    <entry file="file://$PROJECT_DIR$/libft/ft_strchr.c">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libft/ft_strclr.c" />
-    <entry file="file://$PROJECT_DIR$/libft/ft_strsub.c" />
-    <entry file="file://$PROJECT_DIR$/libft/ft_memmove.c">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libft/ft_linelen.c" />
-    <entry file="file://$PROJECT_DIR$/lftgit/Makefile" />
-    <entry file="file://$PROJECT_DIR$/lftgit/libft_typedefs.h" />
-    <entry file="file://$PROJECT_DIR$/lftgit/ft_atoi.c" />
-    <entry file="file://$PROJECT_DIR$/lftgit/libft.h" />
-    <entry file="file://$PROJECT_DIR$/libft/ft_atoibase.c">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libft/ft_gnl/ft_gnl_typedefs.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/push_swap/push_swap_push.c" />
     <entry file="file://$PROJECT_DIR$/push_swap/ft_push.c" />
     <entry file="file://$PROJECT_DIR$/push_swap/ft_swap.c" />
@@ -558,13 +615,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libft/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -643,90 +693,181 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libft/libft.h">
+    <entry file="file://$PROJECT_DIR$/libft/ft_printf/ft_printf_color.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fpush_swap/push_swap.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="48" column="69" selection-start-line="48" selection-start-column="69" selection-end-line="48" selection-end-column="69" />
+        <state relative-caret-position="3570">
+          <caret line="238" selection-start-line="238" selection-end-line="238" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fpush_swap/shared_funs.c">
+    <entry file="file://$PROJECT_DIR$/fpush_swap/push_swap_operations.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="957">
-          <caret line="279" column="21" selection-start-line="279" selection-start-column="21" selection-end-line="279" selection-end-column="21" />
+        <state relative-caret-position="525">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fpush_swap/operations.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
+        <state relative-caret-position="812">
           <caret line="57" selection-start-line="57" selection-end-line="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fpush_swap/shared_parse.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
+        <state relative-caret-position="776">
+          <caret line="70" column="1" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libft/ft_printf/ft_printf_color.c">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fpush_swap/push_swap.c">
+    <entry file="file://$PROJECT_DIR$/libft/ft_integer.c" />
+    <entry file="file://$PROJECT_DIR$/libft/ft_atoibase.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="228" column="1" selection-start-line="228" selection-start-column="1" selection-end-line="228" selection-end-column="1" />
+        <state relative-caret-position="-454" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pr/ex14/ft_sqrt.c" />
+    <entry file="file://$PROJECT_DIR$/libft/ft_swap.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/vis/ft_draw_line.c" />
+    <entry file="file://$PROJECT_DIR$/fpush_swap/shared_funs.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fpush_swap/push_swap_utils.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="82" column="1" selection-start-line="82" selection-start-column="1" selection-end-line="82" selection-end-column="1" />
+        <state relative-caret-position="830">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fpush_swap/push_swap_operations.c">
+    <entry file="file://$PROJECT_DIR$/fpush_swap/vis_draw_bg.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="225">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fpush_swap/push_swap_typedefs.h">
+    <entry file="file://$PROJECT_DIR$/libft/vis/ft_wu_line_circle.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="47" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="47" />
+        <state relative-caret-position="445">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fpush_swap/push_swap.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/fpush_swap/vis_draw_stack.cpp" />
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+        <state relative-caret-position="405">
+          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="80" column="32" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="123" column="2507" selection-start-line="123" selection-start-column="8" selection-end-line="123" selection-end-column="2507" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/libft.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="52" column="54" selection-start-line="52" selection-start-column="54" selection-end-line="52" selection-end-column="54" />
+          <folding>
+            <element signature="e#926#946#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/vis/ft_line_gradient.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fpush_swap/checker.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="172" column="15" lean-forward="true" selection-start-line="172" selection-start-column="15" selection-end-line="172" selection-end-column="15" />
+        <state relative-caret-position="756">
+          <caret line="120" column="48" selection-start-line="120" selection-start-column="48" selection-end-line="120" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fpush_swap/vis_utils.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="847">
+          <caret line="87" column="35" selection-start-line="87" selection-start-column="35" selection-end-line="87" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fpush_swap/vis_draw_stack.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/vis/vis.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#922#944#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/vis/vis_typedefs.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+          <folding>
+            <element signature="e#940#962#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fpush_swap/push_swap.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+          <folding>
+            <element signature="e#934#962#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fpush_swap/push_swap_typedefs.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="772">
+          <caret line="55" column="34" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fpush_swap/vis.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="89" column="24" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
         </state>
       </provider>
     </entry>

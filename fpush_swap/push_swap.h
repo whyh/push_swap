@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/12 11:53:25 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/02/23 21:57:52 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/02/28 17:55:23 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,5 +36,20 @@ int					push_swap_avg(t_push_swap_list *stack, size_t group);
 int					push_swap_parse(t_push_swap_list **stack, size_t argc, char **argv,
 					size_t i);
 size_t				push_swap_stack_size(t_push_swap_list *stack);
+void push_swap_parse_options(char *arg, t_push_swap_vis *vis, size_t *i);
+int	push_swap_valid(char *line);
+void	push_swap_exec(t_push_swap_list **stack_a, t_push_swap_list **stack_b,
+					   char *line, t_push_swap_vis *vis);
+
+void				push_swap_t(t_push_swap_list *stack_a,
+					t_push_swap_list *stack_b, char *status);
+void				push_swap_lim(t_push_swap_vis *vis);
+void	push_swap_paint_stack(t_push_swap_list *stack, t_push_swap_vis *vis);
+void		push_swap_vis_playb(t_push_swap_vis *vis);
+void		push_swap_vis_bg(t_push_swap_vis *vis);
+void	push_swap_vis_stack(t_push_swap_vis *vis, t_vis2d data, t_push_swap_list *stack, int pos);
+void	push_swap_exit(t_push_swap_vis *vis);
+
+void	push_swap_v(t_push_swap_vis *vis, t_push_swap_list *stack_a);
 
 #endif

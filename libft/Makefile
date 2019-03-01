@@ -6,7 +6,7 @@
 #    By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/01/21 20:30:28 by dderevyn          #+#    #+#              #
-#    Updated: 2019/02/08 21:36:45 by dderevyn         ###   ########.fr        #
+#    Updated: 2019/02/25 20:46:36 by dderevyn         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ CC = clang
 CFLAGS = -Wall -Wextra -Werror
 RM = /bin/rm -rf
 
-LIBFT_PATH = ./
+LIBFT_PATH = 	./
 LIBFT_INCS =	libft.h\
 				libft_typedefs.h
 LIBFT_SRCS = 	ft_abs.c\
@@ -42,11 +42,12 @@ LIBFT_SRCS = 	ft_abs.c\
 				ft_strnew.c\
 				ft_strnin.c\
 				ft_strninject.c\
-				ft_strrchr.c
+				ft_strrchr.c\
+				ft_swap.c
 LIBFT_OBJS = $(LIBFT_SRCS:%.c=$(LIBFT_OBJS_DIR)/%.o)
 LIBFT_OBJS_DIR = $(OBJS_DIR)
 
-GNL_PATH = ft_gnl/
+GNL_PATH = 		ft_gnl/
 GNL_INCS = 		ft_gnl_typedefs.h
 GNL_SRCS =		ft_gnl.c
 GNL_OBJS = $(GNL_SRCS:%.c=$(GNL_OBJS_DIR)/%.o)
@@ -74,9 +75,17 @@ PRINTF_SRCS =	ft_printf.c\
 PRINTF_OBJS = $(PRINTF_SRCS:%.c=$(PRINTF_OBJS_DIR)/%.o)
 PRINTF_OBJS_DIR = $(OBJS_DIR)
 
+VIS_PATH = 		vis/
+VIS_INCS = 		vis.h\
+				vis_typedefs.h
+VIS_SRCS =		ft_wu_line_circle.c\
+				ft_line_gradient.c
+VIS_OBJS = $(VIS_SRCS:%.c=$(VIS_OBJS_DIR)/%.o)
+VIS_OBJS_DIR = $(OBJS_DIR)
+
 all: $(NAME)
 
-$(NAME): $(LIBFT_OBJS) $(GNL_OBJS) $(PRINTF_OBJS)
+$(NAME): $(LIBFT_OBJS) $(GNL_OBJS) $(PRINTF_OBJS) $(VIS_OBJS)
 	@ar rc $(NAME) $^
 	@ranlib $(NAME)
 
@@ -91,6 +100,10 @@ $(GNL_OBJS_DIR)/%.o: $(GNL_PATH)%.c
 $(PRINTF_OBJS_DIR)/%.o: $(PRINTF_PATH)%.c
 	@mkdir -p $(LIBFT_OBJS_DIR)
 	@$(CC) $(CFLAGS) -c $< $(addprefix -I.,$(addprefix $(PRINTF_PATH),$(PRINTF_INCS))) -o $@
+
+$(VIS_OBJS_DIR)/%.o: $(VIS_PATH)%.c
+	@mkdir -p $(VIS_OBJS_DIR)
+	@$(CC) $(CFLAGS) -c $< $(addprefix -I.,$(addprefix $(VIS_PATH),$(VIS_INCS))) -o $@
 
 clean:
 	@$(RM) $(OBJS_DIR)

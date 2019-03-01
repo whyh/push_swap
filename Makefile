@@ -6,7 +6,7 @@
 #    By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/01/21 20:30:28 by dderevyn          #+#    #+#              #
-#    Updated: 2019/02/23 20:47:52 by dderevyn         ###   ########.fr        #
+#    Updated: 2019/02/25 14:25:40 by dderevyn         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,9 +16,12 @@ NAME1 = checker
 OBJS_DIR = .$(patsubst %.a,%,$(NAME))_objects
 CC = clang
 CFLAGS = -Wall -Wextra -Werror
+CLIBS = -lmlx -framework OpenGL -framework AppKit
 RM = /bin/rm -rf
 CP = cp -rf
-ARG =   69   64   81   85   95   68   57   86   80   66   13    3   24   21   19   89   71   45   16   63   97   25    6   48   90   55  100   82   27   23   20   38   34   84    1   47   59   79   58   15   11   14   65   36   53   52   72   43   87   74   42   88   91    5   32   10   76   33   77   60    4   75   62   41   29   54   96   73   39   70   51   31   56   93   28   94   49   40   99   46   67   18   44   26   98    2   30   78    8   22   92   83   37   17    7   12   61    9   50   35
+
+
+ARG =c
 ARG1 =  68   27   52   55   42   51   22   30   43   76   77   70   72   94   57   39   21   13    4   80   35   97   67   46   92   86   69   29   44   49   28    1   83   88    5   79   54   98   63    7   31   61   10   45   38   47   64   58   41   26   99   11   62   85   36   56   59   19   84   75   20   50  100   16   40   87   74   17   25   53   37    2   71   12   73   18   65   34    9   81   15    6   66   95   23    8   32   82   90   24   48    3   89   33   14   96   60   91   93   78
 ARG2 =  92   42   37   81   40   29   18   91   83   46   35   97   39   75   28   19   11   47   20   32   25   65   60   96   31   51   15   26   76   61   95   85   23   57   49   84   74   43   38   79   54   73   78   16    2   80   33   44   98   30   14   12   36   50   22   66   87   63   71   62   93   58   56    8   70   77    1   10    3    5   21   17   90    7   24   45   64  100   55   34   99   27   94   86   59   41    9   88   82   72    6   48   67   53   89   13   52   69    4   68
 ARG3 =   4   93   25   48   24   85   20   39   65    2   83   12   28   88   38   81   62   51   19   54   31   64   72   33   84   26   74   52   16   49   44  100   66   80   63   97   15   76   46    8   86   30   18   27   34   92   73    3   68   10   58    9    1   56   87   94   77   41   36   71   14   32   61   11   50   13   82   96   22   40   59   23   29   37   53   98   43   60    7   99   21   79   45   42   91   47   55    5   95   78   89   69   90   57   67   17   70   35   75    6
@@ -141,7 +144,11 @@ CHECKER_INCS = 		push_swap.h\
 CHECKER_SRCS =		checker.c\
 					operations.c\
 					shared_funs.c\
-					shared_parse.c
+					shared_parse.c\
+					vis_draw_bg.c\
+					vis_draw_stack.c\
+					vis_utils.c\
+					vis.c
 CHECKER_OBJS_DIR = $(OBJS_DIR)
 CHECKER_OBJS = $(CHECKER_SRCS:%.c=$(CHECKER_OBJS_DIR)/%.o)
 
@@ -151,7 +158,7 @@ $(NAME): $(PUSH_SWAP_OBJS)
 	@$(CC) $(CFLAGS) $^ -L $(LIBFT_PATH) -l$(patsubst %.a,%,$(LIBFT:lib%=%)) -o $(NAME)
 
 $(NAME1): $(CHECKER_OBJS)
-	@$(CC) $(CFLAGS) $^ -L $(LIBFT_PATH) -l$(patsubst %.a,%,$(LIBFT:lib%=%)) -o $(NAME1)
+	@$(CC) $(CFLAGS) $^ $(CLIBS) -L $(LIBFT_PATH) -l$(patsubst %.a,%,$(LIBFT:lib%=%)) -o $(NAME1)
 
 $(PUSH_SWAP_OBJS_DIR)/%.o: $(PUSH_SWAP_PATH)%.c
 	@mkdir -p $(PUSH_SWAP_OBJS_DIR)

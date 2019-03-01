@@ -285,32 +285,113 @@ fpush_swap/shared_parse.c.s:
 	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/shared_parse.c.s
 .PHONY : fpush_swap/shared_parse.c.s
 
-fpush_swap/visualisation.o: fpush_swap/visualisation.c.o
+fpush_swap/vis.o: fpush_swap/vis.c.o
 
-.PHONY : fpush_swap/visualisation.o
+.PHONY : fpush_swap/vis.o
 
 # target to build an object file
-fpush_swap/visualisation.c.o:
-	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/visualisation.c.o
-.PHONY : fpush_swap/visualisation.c.o
+fpush_swap/vis.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/vis.c.o
+.PHONY : fpush_swap/vis.c.o
 
-fpush_swap/visualisation.i: fpush_swap/visualisation.c.i
+fpush_swap/vis.i: fpush_swap/vis.c.i
 
-.PHONY : fpush_swap/visualisation.i
+.PHONY : fpush_swap/vis.i
 
 # target to preprocess a source file
-fpush_swap/visualisation.c.i:
-	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/visualisation.c.i
-.PHONY : fpush_swap/visualisation.c.i
+fpush_swap/vis.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/vis.c.i
+.PHONY : fpush_swap/vis.c.i
 
-fpush_swap/visualisation.s: fpush_swap/visualisation.c.s
+fpush_swap/vis.s: fpush_swap/vis.c.s
 
-.PHONY : fpush_swap/visualisation.s
+.PHONY : fpush_swap/vis.s
 
 # target to generate assembly for a file
-fpush_swap/visualisation.c.s:
-	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/visualisation.c.s
-.PHONY : fpush_swap/visualisation.c.s
+fpush_swap/vis.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/vis.c.s
+.PHONY : fpush_swap/vis.c.s
+
+fpush_swap/vis_draw_bg.o: fpush_swap/vis_draw_bg.c.o
+
+.PHONY : fpush_swap/vis_draw_bg.o
+
+# target to build an object file
+fpush_swap/vis_draw_bg.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/vis_draw_bg.c.o
+.PHONY : fpush_swap/vis_draw_bg.c.o
+
+fpush_swap/vis_draw_bg.i: fpush_swap/vis_draw_bg.c.i
+
+.PHONY : fpush_swap/vis_draw_bg.i
+
+# target to preprocess a source file
+fpush_swap/vis_draw_bg.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/vis_draw_bg.c.i
+.PHONY : fpush_swap/vis_draw_bg.c.i
+
+fpush_swap/vis_draw_bg.s: fpush_swap/vis_draw_bg.c.s
+
+.PHONY : fpush_swap/vis_draw_bg.s
+
+# target to generate assembly for a file
+fpush_swap/vis_draw_bg.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/vis_draw_bg.c.s
+.PHONY : fpush_swap/vis_draw_bg.c.s
+
+fpush_swap/vis_draw_stack.o: fpush_swap/vis_draw_stack.c.o
+
+.PHONY : fpush_swap/vis_draw_stack.o
+
+# target to build an object file
+fpush_swap/vis_draw_stack.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/vis_draw_stack.c.o
+.PHONY : fpush_swap/vis_draw_stack.c.o
+
+fpush_swap/vis_draw_stack.i: fpush_swap/vis_draw_stack.c.i
+
+.PHONY : fpush_swap/vis_draw_stack.i
+
+# target to preprocess a source file
+fpush_swap/vis_draw_stack.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/vis_draw_stack.c.i
+.PHONY : fpush_swap/vis_draw_stack.c.i
+
+fpush_swap/vis_draw_stack.s: fpush_swap/vis_draw_stack.c.s
+
+.PHONY : fpush_swap/vis_draw_stack.s
+
+# target to generate assembly for a file
+fpush_swap/vis_draw_stack.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/vis_draw_stack.c.s
+.PHONY : fpush_swap/vis_draw_stack.c.s
+
+fpush_swap/vis_utils.o: fpush_swap/vis_utils.c.o
+
+.PHONY : fpush_swap/vis_utils.o
+
+# target to build an object file
+fpush_swap/vis_utils.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/vis_utils.c.o
+.PHONY : fpush_swap/vis_utils.c.o
+
+fpush_swap/vis_utils.i: fpush_swap/vis_utils.c.i
+
+.PHONY : fpush_swap/vis_utils.i
+
+# target to preprocess a source file
+fpush_swap/vis_utils.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/vis_utils.c.i
+.PHONY : fpush_swap/vis_utils.c.i
+
+fpush_swap/vis_utils.s: fpush_swap/vis_utils.c.s
+
+.PHONY : fpush_swap/vis_utils.s
+
+# target to generate assembly for a file
+fpush_swap/vis_utils.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/vis_utils.c.s
+.PHONY : fpush_swap/vis_utils.c.s
 
 libft/ft_abs.o: libft/ft_abs.c.o
 
@@ -1392,6 +1473,87 @@ libft/ft_strrchr.c.s:
 	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/libft/ft_strrchr.c.s
 .PHONY : libft/ft_strrchr.c.s
 
+libft/ft_swap.o: libft/ft_swap.c.o
+
+.PHONY : libft/ft_swap.o
+
+# target to build an object file
+libft/ft_swap.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/libft/ft_swap.c.o
+.PHONY : libft/ft_swap.c.o
+
+libft/ft_swap.i: libft/ft_swap.c.i
+
+.PHONY : libft/ft_swap.i
+
+# target to preprocess a source file
+libft/ft_swap.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/libft/ft_swap.c.i
+.PHONY : libft/ft_swap.c.i
+
+libft/ft_swap.s: libft/ft_swap.c.s
+
+.PHONY : libft/ft_swap.s
+
+# target to generate assembly for a file
+libft/ft_swap.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/libft/ft_swap.c.s
+.PHONY : libft/ft_swap.c.s
+
+libft/vis/ft_line_gradient.o: libft/vis/ft_line_gradient.c.o
+
+.PHONY : libft/vis/ft_line_gradient.o
+
+# target to build an object file
+libft/vis/ft_line_gradient.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/libft/vis/ft_line_gradient.c.o
+.PHONY : libft/vis/ft_line_gradient.c.o
+
+libft/vis/ft_line_gradient.i: libft/vis/ft_line_gradient.c.i
+
+.PHONY : libft/vis/ft_line_gradient.i
+
+# target to preprocess a source file
+libft/vis/ft_line_gradient.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/libft/vis/ft_line_gradient.c.i
+.PHONY : libft/vis/ft_line_gradient.c.i
+
+libft/vis/ft_line_gradient.s: libft/vis/ft_line_gradient.c.s
+
+.PHONY : libft/vis/ft_line_gradient.s
+
+# target to generate assembly for a file
+libft/vis/ft_line_gradient.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/libft/vis/ft_line_gradient.c.s
+.PHONY : libft/vis/ft_line_gradient.c.s
+
+libft/vis/ft_wu_line_circle.o: libft/vis/ft_wu_line_circle.c.o
+
+.PHONY : libft/vis/ft_wu_line_circle.o
+
+# target to build an object file
+libft/vis/ft_wu_line_circle.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/libft/vis/ft_wu_line_circle.c.o
+.PHONY : libft/vis/ft_wu_line_circle.c.o
+
+libft/vis/ft_wu_line_circle.i: libft/vis/ft_wu_line_circle.c.i
+
+.PHONY : libft/vis/ft_wu_line_circle.i
+
+# target to preprocess a source file
+libft/vis/ft_wu_line_circle.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/libft/vis/ft_wu_line_circle.c.i
+.PHONY : libft/vis/ft_wu_line_circle.c.i
+
+libft/vis/ft_wu_line_circle.s: libft/vis/ft_wu_line_circle.c.s
+
+.PHONY : libft/vis/ft_wu_line_circle.s
+
+# target to generate assembly for a file
+libft/vis/ft_wu_line_circle.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/libft/vis/ft_wu_line_circle.c.s
+.PHONY : libft/vis/ft_wu_line_circle.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1419,9 +1581,18 @@ help:
 	@echo "... fpush_swap/shared_parse.o"
 	@echo "... fpush_swap/shared_parse.i"
 	@echo "... fpush_swap/shared_parse.s"
-	@echo "... fpush_swap/visualisation.o"
-	@echo "... fpush_swap/visualisation.i"
-	@echo "... fpush_swap/visualisation.s"
+	@echo "... fpush_swap/vis.o"
+	@echo "... fpush_swap/vis.i"
+	@echo "... fpush_swap/vis.s"
+	@echo "... fpush_swap/vis_draw_bg.o"
+	@echo "... fpush_swap/vis_draw_bg.i"
+	@echo "... fpush_swap/vis_draw_bg.s"
+	@echo "... fpush_swap/vis_draw_stack.o"
+	@echo "... fpush_swap/vis_draw_stack.i"
+	@echo "... fpush_swap/vis_draw_stack.s"
+	@echo "... fpush_swap/vis_utils.o"
+	@echo "... fpush_swap/vis_utils.i"
+	@echo "... fpush_swap/vis_utils.s"
 	@echo "... libft/ft_abs.o"
 	@echo "... libft/ft_abs.i"
 	@echo "... libft/ft_abs.s"
@@ -1542,6 +1713,15 @@ help:
 	@echo "... libft/ft_strrchr.o"
 	@echo "... libft/ft_strrchr.i"
 	@echo "... libft/ft_strrchr.s"
+	@echo "... libft/ft_swap.o"
+	@echo "... libft/ft_swap.i"
+	@echo "... libft/ft_swap.s"
+	@echo "... libft/vis/ft_line_gradient.o"
+	@echo "... libft/vis/ft_line_gradient.i"
+	@echo "... libft/vis/ft_line_gradient.s"
+	@echo "... libft/vis/ft_wu_line_circle.o"
+	@echo "... libft/vis/ft_wu_line_circle.i"
+	@echo "... libft/vis/ft_wu_line_circle.s"
 .PHONY : help
 
 

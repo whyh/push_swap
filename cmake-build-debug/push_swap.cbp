@@ -100,7 +100,16 @@
 		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/shared_parse.c">
 			<Option target="push_swap_clion"/>
 		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/visualisation.c">
+		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/vis.c">
+			<Option target="push_swap_clion"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/vis_draw_bg.c">
+			<Option target="push_swap_clion"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/vis_draw_stack.c">
+			<Option target="push_swap_clion"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/vis_utils.c">
 			<Option target="push_swap_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/libft/ft_abs.c">
@@ -224,6 +233,15 @@
 			<Option target="push_swap_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/libft/ft_strrchr.c">
+			<Option target="push_swap_clion"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/libft/ft_swap.c">
+			<Option target="push_swap_clion"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/libft/vis/ft_line_gradient.c">
+			<Option target="push_swap_clion"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/libft/vis/ft_wu_line_circle.c">
 			<Option target="push_swap_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/CMakeLists.txt">
