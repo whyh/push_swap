@@ -12,7 +12,7 @@
 
 #include "push_swap.h"
 
-t_push_swap_list	*push_swap_prev(t_push_swap_list *stack, size_t group)
+t_push_swap_list	*push_swap_prev(t_push_swap_list *stack, int group)
 {
 	t_push_swap_list	*stack_tmp;
 
@@ -24,7 +24,7 @@ t_push_swap_list	*push_swap_prev(t_push_swap_list *stack, size_t group)
 	}
 	else
 	{
-		while (stack_tmp && stack_tmp->next->group != stack->group)
+		while (stack_tmp && stack_tmp->next->g != stack->g)
 			stack_tmp = stack_tmp->next;
 	}
 	return (stack_tmp);
@@ -34,6 +34,8 @@ void				push_swap_free_stack(t_push_swap_list **stack)
 {
 	t_push_swap_list	*stack_tmp;
 
+	if (!stack || !*stack)
+		return ;
 	stack_tmp = push_swap_prev(*stack, 0);
 	if (stack_tmp)
 		stack_tmp->next = NULL;

@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/12 11:35:38 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/02/23 21:41:16 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/03/03 16:32:59 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ void	push_swap_get_next(t_push_swap_data *data, char stack)
 
 int	valid_next_next(t_push_swap_data *data)
 {
-	if (data->stack_next_next->group == data->group
+	if (data->stack_next_next->g == data->group
 	&& data->stack_next_next != data->stack_next)
 		return (1);
 	return (0);
@@ -122,7 +122,7 @@ int	push_swap_opt_next(t_push_swap_list *stack)
 //	return (0);
 }
 
-size_t	push_swap_count_group(t_push_swap_list *stack, size_t group)
+size_t	push_swap_count_group(t_push_swap_list *stack, int group)
 {
 	size_t	stack_size;
 	size_t	n;
@@ -131,7 +131,7 @@ size_t	push_swap_count_group(t_push_swap_list *stack, size_t group)
 	n = 0;
 	while (stack_size > 0)
 	{
-		if (stack->group == group)
+		if (stack->g == group)
 			++n;
 		stack = stack->next;
 		--stack_size;
@@ -139,8 +139,8 @@ size_t	push_swap_count_group(t_push_swap_list *stack, size_t group)
 	return (n);
 }
 
-static void	push_swap_group(t_push_swap_data *data, size_t group_targ,
-			size_t group_new, char spec)
+static void	push_swap_group(t_push_swap_data *data, int group_targ,
+			int group_new, char spec)
 {
 	t_push_swap_list	*stack;
 	size_t				stack_size;
@@ -152,10 +152,10 @@ static void	push_swap_group(t_push_swap_data *data, size_t group_targ,
 	stack_size = push_swap_stack_size(stack);
 	while (stack_size)
 	{
-		if ((stack->group == group_targ || group_targ == 0)
+		if ((stack->g == group_targ || group_targ == 0)
 			&& ((spec == 'b' && stack->value >= data->avg)
 				|| (spec == 'a' && stack->value <= data->avg)))
-			stack->group = group_new;
+			stack->g = group_new;
 		stack = stack->next;
 		--stack_size;
 	}

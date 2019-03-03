@@ -6,11 +6,11 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/25 16:38:51 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/02/28 15:04:31 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/03/03 16:56:04 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "vis.h"
+#include "checker_v.h"
 
 static void	static_draw_p(t_vis2d *data2d, double x, double y, double sat)
 {
@@ -32,22 +32,21 @@ static void	static_init_line(t_vis2d *data)
 	data->rv = 0;
 	if ((data->y1 - data->y0) > (data->x1 - data->x0))
 	{
-		ft_swap_i(&(data->y0), &(data->x0));
-		ft_swap_i(&(data->y1), &(data->x1));
+		ft_swap_d(&(data->y0), &(data->x0));
+		ft_swap_d(&(data->y1), &(data->x1));
 		data->rv = 1;
 	}
 	if (data->x1 < data->x0)
 	{
-		ft_swap_i(&(data->x0), &(data->x1));
-		ft_swap_i(&(data->y0), &(data->y1));
+		ft_swap_d(&(data->x0), &(data->x1));
+		ft_swap_d(&(data->y0), &(data->y1));
 	}
-	data->dx = (double)data->x1 - (double)data->x0;
-	data->dy = (double)data->y1 - (double)data->y0;
+	data->dx = data->x1 - data->x0;
+	data->dy = data->y1 - data->y0;
 	data->slope = data->dy / data->dx;
 	data->x = data->x0;
 	data->y = data->y0;
 }
-
 
 void		ft_wu_line(t_vis2d data)
 {

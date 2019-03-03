@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   lineargrad.c                                       :+:      :+:    :+:   */
+/*   ft_line_gradient.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/25 20:07:32 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/02/27 17:48:17 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/03/03 16:56:04 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "vis.h"
+#include "checker_v.h"
 
 static int		static_get_color(int color0, int color1, double perc)
 {
@@ -39,7 +39,8 @@ int				ft_line_gradient(t_vis2d data2d, double sat)
 	int		b;
 	double	perc;
 
-	perc = static_gradient_percent((int)data2d.x, data2d.x0, data2d.x1);
+	perc = static_gradient_percent(
+	(int)data2d.x, (int)data2d.x0, (int)data2d.x1);
 	r = (int)(static_get_color(
 	(data2d.rgb0 >> 16), (data2d.rgb1 >> 16), perc) * sat);
 	g = (int)(static_get_color(

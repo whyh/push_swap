@@ -85,7 +85,28 @@
 		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker.c">
 			<Option target="push_swap_clion"/>
 		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/operations.c">
+		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker_t.c">
+			<Option target="push_swap_clion"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker_utils.c">
+			<Option target="push_swap_clion"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker_v.c">
+			<Option target="push_swap_clion"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker_v_draw.c">
+			<Option target="push_swap_clion"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker_v_draw_stack.c">
+			<Option target="push_swap_clion"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker_v_init.c">
+			<Option target="push_swap_clion"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker_v_interaction.c">
+			<Option target="push_swap_clion"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker_v_utils.c">
 			<Option target="push_swap_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap_operations.c">
@@ -97,19 +118,10 @@
 		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/shared_funs.c">
 			<Option target="push_swap_clion"/>
 		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/shared_operations.c">
+			<Option target="push_swap_clion"/>
+		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/shared_parse.c">
-			<Option target="push_swap_clion"/>
-		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/vis.c">
-			<Option target="push_swap_clion"/>
-		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/vis_draw_bg.c">
-			<Option target="push_swap_clion"/>
-		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/vis_draw_stack.c">
-			<Option target="push_swap_clion"/>
-		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/vis_utils.c">
 			<Option target="push_swap_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/libft/ft_abs.c">

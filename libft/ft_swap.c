@@ -29,3 +29,12 @@ void	ft_swap_i(int *ptr1, int *ptr2)
 	*ptr1 = *ptr2;
 	*ptr2 = tmp;
 }
+
+void	ft_swap_d(double *ptr1, double *ptr2)
+{
+	double	tmp;
+
+	tmp = *ptr1;
+	*ptr1 = *ptr2;
+	*ptr2 = tmp;
+}

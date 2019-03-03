@@ -6,7 +6,7 @@
 #    By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/01/21 20:30:28 by dderevyn          #+#    #+#              #
-#    Updated: 2019/02/25 14:25:40 by dderevyn         ###   ########.fr        #
+#    Updated: 2019/03/03 16:58:54 by dderevyn         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,8 +20,7 @@ CLIBS = -lmlx -framework OpenGL -framework AppKit
 RM = /bin/rm -rf
 CP = cp -rf
 
-
-ARG =c
+ARG =   44   42   32   76   67   21   92   30   71   29   13   97   75   91   77   34   62   47   38   31   46   11    4   89   83   43   64   81   52   63   94   99    6   37   84   69   70   41   98    7   90   48    1    9   57   12   20   49   45   60   53   93   27   65   33   54   35   74   86   23   17   18    2   72   88   80   50   24   79   95   85   40   15   51   59    5   36   96   56   26   82   78   25   16   61   87    8   68   14   66   39   22   10    3  100   55   28   58   73   19
 ARG1 =  68   27   52   55   42   51   22   30   43   76   77   70   72   94   57   39   21   13    4   80   35   97   67   46   92   86   69   29   44   49   28    1   83   88    5   79   54   98   63    7   31   61   10   45   38   47   64   58   41   26   99   11   62   85   36   56   59   19   84   75   20   50  100   16   40   87   74   17   25   53   37    2   71   12   73   18   65   34    9   81   15    6   66   95   23    8   32   82   90   24   48    3   89   33   14   96   60   91   93   78
 ARG2 =  92   42   37   81   40   29   18   91   83   46   35   97   39   75   28   19   11   47   20   32   25   65   60   96   31   51   15   26   76   61   95   85   23   57   49   84   74   43   38   79   54   73   78   16    2   80   33   44   98   30   14   12   36   50   22   66   87   63   71   62   93   58   56    8   70   77    1   10    3    5   21   17   90    7   24   45   64  100   55   34   99   27   94   86   59   41    9   88   82   72    6   48   67   53   89   13   52   69    4   68
 ARG3 =   4   93   25   48   24   85   20   39   65    2   83   12   28   88   38   81   62   51   19   54   31   64   72   33   84   26   74   52   16   49   44  100   66   80   63   97   15   76   46    8   86   30   18   27   34   92   73    3   68   10   58    9    1   56   87   94   77   41   36   71   14   32   61   11   50   13   82   96   22   40   59   23   29   37   53   98   43   60    7   99   21   79   45   42   91   47   55    5   95   78   89   69   90   57   67   17   70   35   75    6
@@ -130,10 +129,10 @@ PUSH_SWAP_PATH = fpush_swap/
 PUSH_SWAP_INCS = 		push_swap.h\
                         push_swap_typedefs.h
 PUSH_SWAP_SRCS =		push_swap.c\
-						operations.c\
-						shared_funs.c\
 						push_swap_operations.c\
 						push_swap_utils.c\
+						shared_funs.c\
+						shared_operations.c\
 						shared_parse.c
 PUSH_SWAP_OBJS_DIR = $(OBJS_DIR)
 PUSH_SWAP_OBJS = $(PUSH_SWAP_SRCS:%.c=$(PUSH_SWAP_OBJS_DIR)/%.o)
@@ -142,13 +141,17 @@ CHECKER_PATH = fpush_swap/
 CHECKER_INCS = 		push_swap.h\
 					push_swap_typedefs.h
 CHECKER_SRCS =		checker.c\
-					operations.c\
+					checker_t.c\
+					checker_utils.c\
+					checker_v_draw.c\
+					checker_v_draw_stack.c\
+					checker_v_init.c\
+					checker_v_interaction.c\
+					checker_v_utils.c\
+					checker_v.c\
 					shared_funs.c\
-					shared_parse.c\
-					vis_draw_bg.c\
-					vis_draw_stack.c\
-					vis_utils.c\
-					vis.c
+					shared_operations.c\
+					shared_parse.c
 CHECKER_OBJS_DIR = $(OBJS_DIR)
 CHECKER_OBJS = $(CHECKER_SRCS:%.c=$(CHECKER_OBJS_DIR)/%.o)
 

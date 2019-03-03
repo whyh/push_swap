@@ -21,7 +21,7 @@ int				push_swap_next(t_push_swap_data data, t_push_swap_list *stack,
 
 	r = 0;
 	stack_tmp = stack;
-	while ((stack_tmp->group != data.group || stack_tmp == stack_avoid)
+	while ((stack_tmp->g != data.group || stack_tmp == stack_avoid)
 	&& (size_t)ft_abs(r) <= data.stack_size)
 	{
 		stack_tmp = stack_tmp->next;
@@ -30,7 +30,7 @@ int				push_swap_next(t_push_swap_data data, t_push_swap_list *stack,
 	*stack_next = stack_tmp;
 	rr = 0;
 	stack_tmp = stack;
-	while ((stack_tmp->group != data.group || stack_tmp == stack_avoid)
+	while ((stack_tmp->g != data.group || stack_tmp == stack_avoid)
 	&& (size_t)ft_abs(rr) <= data.stack_size)
 	{
 		stack_tmp = push_swap_prev(stack_tmp, 0);
@@ -41,38 +41,38 @@ int				push_swap_next(t_push_swap_data data, t_push_swap_list *stack,
 	return ((ft_abs(r) <= ft_abs(rr)) ? r : rr);
 }
 
-int				push_swap_sorted(t_push_swap_list *stack, size_t group)
+int				push_swap_sorted(t_push_swap_list *stack, int group)
 {
 	t_push_swap_list	*stack_tmp;
 
 	if (!stack)
 		return (1);
-	if (stack->group == group)
+	if (stack->g == group)
 		return (0);
 	stack_tmp = stack->next;
 	while (stack_tmp != stack)
 	{
-		if (stack_tmp->group == group)
+		if (stack_tmp->g == group)
 			return (0);
 		stack_tmp = stack_tmp->next;
 	}
 	return (1);
 }
 
-static int		push_swap_base_avg(t_push_swap_list *stack, size_t group)
+static int		push_swap_base_avg(t_push_swap_list *stack, int group)
 {
 	t_push_swap_list	*stack_tmp;
 	int					n;
 	int					avg;
 
 	n = 1;
-	while (stack->group != group)
+	while (stack->g != group)
 		stack = stack->next;
 	avg = stack->value;
 	stack_tmp = stack->next;
 	while (stack_tmp != stack)
 	{
-		if (stack_tmp->group == group)
+		if (stack_tmp->g == group)
 		{
 			avg += stack_tmp->value;
 			++n;
@@ -83,24 +83,24 @@ static int		push_swap_base_avg(t_push_swap_list *stack, size_t group)
 }
 
 static int		push_swap_get_avg(t_push_swap_list *stack, int avg,
-				size_t group)
+				int group)
 {
 	t_push_swap_list	*stack_tmp;
 
 	stack_tmp = stack;
-	if (stack_tmp->group == group && avg == stack_tmp->value)
+	if (stack_tmp->g == group && avg == stack_tmp->value)
 		return (1);
 	stack_tmp = stack_tmp->next;
 	while (stack_tmp != stack)
 	{
-		if (stack_tmp->group == group && avg == stack_tmp->value)
+		if (stack_tmp->g == group && avg == stack_tmp->value)
 			return (1);
 		stack_tmp = stack_tmp->next;
 	}
 	return (0);
 }
 
-int				push_swap_avg(t_push_swap_list *stack, size_t group)
+int				push_swap_avg(t_push_swap_list *stack, int group)
 {
 	int	err;
 	int	avg;
