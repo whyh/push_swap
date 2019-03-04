@@ -6,7 +6,7 @@
 #    By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/01/21 20:30:28 by dderevyn          #+#    #+#              #
-#    Updated: 2019/03/04 19:17:51 by dderevyn         ###   ########.fr        #
+#    Updated: 2019/03/04 21:23:58 by dderevyn         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -144,11 +144,14 @@ CHECKER_SRCS =		checker.c\
 					checker_t.c\
 					checker_utils.c\
 					checker_v_draw.c\
+					checker_v_draw_bg.c\
 					checker_v_draw_stack.c\
 					checker_v_init.c\
-					checker_v_interaction.c\
 					checker_v_utils.c\
 					checker_v.c\
+					checker_v_key_control.c\
+					checker_v_loop_control.c\
+					checker_v_mouse_control.c\
 					shared_funs.c\
 					shared_operations.c\
 					shared_parse.c
@@ -294,7 +297,7 @@ runp:
 
 run1:
 #	@./push_swap $(ARG500) || true
-	@./push_swap $(ARG32) | ./checker -v $(ARG32) || true
+	@./push_swap $(ARG99) | ./checker -v $(ARG99) || true
 
 run:
 	@./push_swap $(ARG500) | ./checker $(ARG500) || true

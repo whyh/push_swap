@@ -150,33 +150,6 @@ fpush_swap/checker.c.s:
 	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/checker.c.s
 .PHONY : fpush_swap/checker.c.s
 
-fpush_swap/checker_t.o: fpush_swap/checker_t.c.o
-
-.PHONY : fpush_swap/checker_t.o
-
-# target to build an object file
-fpush_swap/checker_t.c.o:
-	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/checker_t.c.o
-.PHONY : fpush_swap/checker_t.c.o
-
-fpush_swap/checker_t.i: fpush_swap/checker_t.c.i
-
-.PHONY : fpush_swap/checker_t.i
-
-# target to preprocess a source file
-fpush_swap/checker_t.c.i:
-	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/checker_t.c.i
-.PHONY : fpush_swap/checker_t.c.i
-
-fpush_swap/checker_t.s: fpush_swap/checker_t.c.s
-
-.PHONY : fpush_swap/checker_t.s
-
-# target to generate assembly for a file
-fpush_swap/checker_t.c.s:
-	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/checker_t.c.s
-.PHONY : fpush_swap/checker_t.c.s
-
 fpush_swap/checker_utils.o: fpush_swap/checker_utils.c.o
 
 .PHONY : fpush_swap/checker_utils.o
@@ -258,6 +231,33 @@ fpush_swap/checker_v_draw.c.s:
 	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_draw.c.s
 .PHONY : fpush_swap/checker_v_draw.c.s
 
+fpush_swap/checker_v_draw_bg.o: fpush_swap/checker_v_draw_bg.c.o
+
+.PHONY : fpush_swap/checker_v_draw_bg.o
+
+# target to build an object file
+fpush_swap/checker_v_draw_bg.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_draw_bg.c.o
+.PHONY : fpush_swap/checker_v_draw_bg.c.o
+
+fpush_swap/checker_v_draw_bg.i: fpush_swap/checker_v_draw_bg.c.i
+
+.PHONY : fpush_swap/checker_v_draw_bg.i
+
+# target to preprocess a source file
+fpush_swap/checker_v_draw_bg.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_draw_bg.c.i
+.PHONY : fpush_swap/checker_v_draw_bg.c.i
+
+fpush_swap/checker_v_draw_bg.s: fpush_swap/checker_v_draw_bg.c.s
+
+.PHONY : fpush_swap/checker_v_draw_bg.s
+
+# target to generate assembly for a file
+fpush_swap/checker_v_draw_bg.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_draw_bg.c.s
+.PHONY : fpush_swap/checker_v_draw_bg.c.s
+
 fpush_swap/checker_v_draw_stack.o: fpush_swap/checker_v_draw_stack.c.o
 
 .PHONY : fpush_swap/checker_v_draw_stack.o
@@ -312,32 +312,86 @@ fpush_swap/checker_v_init.c.s:
 	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_init.c.s
 .PHONY : fpush_swap/checker_v_init.c.s
 
-fpush_swap/checker_v_interaction.o: fpush_swap/checker_v_interaction.c.o
+fpush_swap/checker_v_key_control.o: fpush_swap/checker_v_key_control.c.o
 
-.PHONY : fpush_swap/checker_v_interaction.o
+.PHONY : fpush_swap/checker_v_key_control.o
 
 # target to build an object file
-fpush_swap/checker_v_interaction.c.o:
-	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_interaction.c.o
-.PHONY : fpush_swap/checker_v_interaction.c.o
+fpush_swap/checker_v_key_control.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_key_control.c.o
+.PHONY : fpush_swap/checker_v_key_control.c.o
 
-fpush_swap/checker_v_interaction.i: fpush_swap/checker_v_interaction.c.i
+fpush_swap/checker_v_key_control.i: fpush_swap/checker_v_key_control.c.i
 
-.PHONY : fpush_swap/checker_v_interaction.i
+.PHONY : fpush_swap/checker_v_key_control.i
 
 # target to preprocess a source file
-fpush_swap/checker_v_interaction.c.i:
-	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_interaction.c.i
-.PHONY : fpush_swap/checker_v_interaction.c.i
+fpush_swap/checker_v_key_control.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_key_control.c.i
+.PHONY : fpush_swap/checker_v_key_control.c.i
 
-fpush_swap/checker_v_interaction.s: fpush_swap/checker_v_interaction.c.s
+fpush_swap/checker_v_key_control.s: fpush_swap/checker_v_key_control.c.s
 
-.PHONY : fpush_swap/checker_v_interaction.s
+.PHONY : fpush_swap/checker_v_key_control.s
 
 # target to generate assembly for a file
-fpush_swap/checker_v_interaction.c.s:
-	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_interaction.c.s
-.PHONY : fpush_swap/checker_v_interaction.c.s
+fpush_swap/checker_v_key_control.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_key_control.c.s
+.PHONY : fpush_swap/checker_v_key_control.c.s
+
+fpush_swap/checker_v_loop_control.o: fpush_swap/checker_v_loop_control.c.o
+
+.PHONY : fpush_swap/checker_v_loop_control.o
+
+# target to build an object file
+fpush_swap/checker_v_loop_control.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_loop_control.c.o
+.PHONY : fpush_swap/checker_v_loop_control.c.o
+
+fpush_swap/checker_v_loop_control.i: fpush_swap/checker_v_loop_control.c.i
+
+.PHONY : fpush_swap/checker_v_loop_control.i
+
+# target to preprocess a source file
+fpush_swap/checker_v_loop_control.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_loop_control.c.i
+.PHONY : fpush_swap/checker_v_loop_control.c.i
+
+fpush_swap/checker_v_loop_control.s: fpush_swap/checker_v_loop_control.c.s
+
+.PHONY : fpush_swap/checker_v_loop_control.s
+
+# target to generate assembly for a file
+fpush_swap/checker_v_loop_control.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_loop_control.c.s
+.PHONY : fpush_swap/checker_v_loop_control.c.s
+
+fpush_swap/checker_v_mouse_control.o: fpush_swap/checker_v_mouse_control.c.o
+
+.PHONY : fpush_swap/checker_v_mouse_control.o
+
+# target to build an object file
+fpush_swap/checker_v_mouse_control.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_mouse_control.c.o
+.PHONY : fpush_swap/checker_v_mouse_control.c.o
+
+fpush_swap/checker_v_mouse_control.i: fpush_swap/checker_v_mouse_control.c.i
+
+.PHONY : fpush_swap/checker_v_mouse_control.i
+
+# target to preprocess a source file
+fpush_swap/checker_v_mouse_control.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_mouse_control.c.i
+.PHONY : fpush_swap/checker_v_mouse_control.c.i
+
+fpush_swap/checker_v_mouse_control.s: fpush_swap/checker_v_mouse_control.c.s
+
+.PHONY : fpush_swap/checker_v_mouse_control.s
+
+# target to generate assembly for a file
+fpush_swap/checker_v_mouse_control.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_mouse_control.c.s
+.PHONY : fpush_swap/checker_v_mouse_control.c.s
 
 fpush_swap/checker_v_utils.o: fpush_swap/checker_v_utils.c.o
 
@@ -365,6 +419,33 @@ fpush_swap/checker_v_utils.s: fpush_swap/checker_v_utils.c.s
 fpush_swap/checker_v_utils.c.s:
 	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_utils.c.s
 .PHONY : fpush_swap/checker_v_utils.c.s
+
+fpush_swap/push_swap.o: fpush_swap/push_swap.c.o
+
+.PHONY : fpush_swap/push_swap.o
+
+# target to build an object file
+fpush_swap/push_swap.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap.c.o
+.PHONY : fpush_swap/push_swap.c.o
+
+fpush_swap/push_swap.i: fpush_swap/push_swap.c.i
+
+.PHONY : fpush_swap/push_swap.i
+
+# target to preprocess a source file
+fpush_swap/push_swap.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap.c.i
+.PHONY : fpush_swap/push_swap.c.i
+
+fpush_swap/push_swap.s: fpush_swap/push_swap.c.s
+
+.PHONY : fpush_swap/push_swap.s
+
+# target to generate assembly for a file
+fpush_swap/push_swap.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap.c.s
+.PHONY : fpush_swap/push_swap.c.s
 
 fpush_swap/push_swap_operations.o: fpush_swap/push_swap_operations.c.o
 
@@ -1674,9 +1755,6 @@ help:
 	@echo "... fpush_swap/checker.o"
 	@echo "... fpush_swap/checker.i"
 	@echo "... fpush_swap/checker.s"
-	@echo "... fpush_swap/checker_t.o"
-	@echo "... fpush_swap/checker_t.i"
-	@echo "... fpush_swap/checker_t.s"
 	@echo "... fpush_swap/checker_utils.o"
 	@echo "... fpush_swap/checker_utils.i"
 	@echo "... fpush_swap/checker_utils.s"
@@ -1686,18 +1764,30 @@ help:
 	@echo "... fpush_swap/checker_v_draw.o"
 	@echo "... fpush_swap/checker_v_draw.i"
 	@echo "... fpush_swap/checker_v_draw.s"
+	@echo "... fpush_swap/checker_v_draw_bg.o"
+	@echo "... fpush_swap/checker_v_draw_bg.i"
+	@echo "... fpush_swap/checker_v_draw_bg.s"
 	@echo "... fpush_swap/checker_v_draw_stack.o"
 	@echo "... fpush_swap/checker_v_draw_stack.i"
 	@echo "... fpush_swap/checker_v_draw_stack.s"
 	@echo "... fpush_swap/checker_v_init.o"
 	@echo "... fpush_swap/checker_v_init.i"
 	@echo "... fpush_swap/checker_v_init.s"
-	@echo "... fpush_swap/checker_v_interaction.o"
-	@echo "... fpush_swap/checker_v_interaction.i"
-	@echo "... fpush_swap/checker_v_interaction.s"
+	@echo "... fpush_swap/checker_v_key_control.o"
+	@echo "... fpush_swap/checker_v_key_control.i"
+	@echo "... fpush_swap/checker_v_key_control.s"
+	@echo "... fpush_swap/checker_v_loop_control.o"
+	@echo "... fpush_swap/checker_v_loop_control.i"
+	@echo "... fpush_swap/checker_v_loop_control.s"
+	@echo "... fpush_swap/checker_v_mouse_control.o"
+	@echo "... fpush_swap/checker_v_mouse_control.i"
+	@echo "... fpush_swap/checker_v_mouse_control.s"
 	@echo "... fpush_swap/checker_v_utils.o"
 	@echo "... fpush_swap/checker_v_utils.i"
 	@echo "... fpush_swap/checker_v_utils.s"
+	@echo "... fpush_swap/push_swap.o"
+	@echo "... fpush_swap/push_swap.i"
+	@echo "... fpush_swap/push_swap.s"
 	@echo "... fpush_swap/push_swap_operations.o"
 	@echo "... fpush_swap/push_swap_operations.i"
 	@echo "... fpush_swap/push_swap_operations.s"

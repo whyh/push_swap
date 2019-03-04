@@ -56,6 +56,17 @@ CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_draw.c.o: ../libft/libft_typ
 CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_draw.c.o: ../libft/vis/checker_v.h
 CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_draw.c.o: ../libft/vis/vis_typedefs.h
 
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_draw_bg.c.o: ../fpush_swap/checker_v_draw_bg.c
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_draw_bg.c.o: ../fpush_swap/push_swap.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_draw_bg.c.o: ../fpush_swap/push_swap_typedefs.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_draw_bg.c.o: ../libft/ft_gnl/ft_gnl_typedefs.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_draw_bg.c.o: ../libft/ft_printf/ft_printf.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_draw_bg.c.o: ../libft/ft_printf/ft_printf_typedefs.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_draw_bg.c.o: ../libft/libft.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_draw_bg.c.o: ../libft/libft_typedefs.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_draw_bg.c.o: ../libft/vis/checker_v.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_draw_bg.c.o: ../libft/vis/vis_typedefs.h
+
 CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_draw_stack.c.o: ../fpush_swap/checker_v_draw_stack.c
 CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_draw_stack.c.o: ../fpush_swap/push_swap.h
 CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_draw_stack.c.o: ../fpush_swap/push_swap_typedefs.h
@@ -78,16 +89,38 @@ CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_init.c.o: ../libft/libft_typ
 CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_init.c.o: ../libft/vis/checker_v.h
 CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_init.c.o: ../libft/vis/vis_typedefs.h
 
-CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_interaction.c.o: ../fpush_swap/checker_v_interaction.c
-CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_interaction.c.o: ../fpush_swap/push_swap.h
-CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_interaction.c.o: ../fpush_swap/push_swap_typedefs.h
-CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_interaction.c.o: ../libft/ft_gnl/ft_gnl_typedefs.h
-CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_interaction.c.o: ../libft/ft_printf/ft_printf.h
-CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_interaction.c.o: ../libft/ft_printf/ft_printf_typedefs.h
-CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_interaction.c.o: ../libft/libft.h
-CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_interaction.c.o: ../libft/libft_typedefs.h
-CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_interaction.c.o: ../libft/vis/checker_v.h
-CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_interaction.c.o: ../libft/vis/vis_typedefs.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_key_control.c.o: ../fpush_swap/checker_v_key_control.c
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_key_control.c.o: ../fpush_swap/push_swap.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_key_control.c.o: ../fpush_swap/push_swap_typedefs.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_key_control.c.o: ../libft/ft_gnl/ft_gnl_typedefs.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_key_control.c.o: ../libft/ft_printf/ft_printf.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_key_control.c.o: ../libft/ft_printf/ft_printf_typedefs.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_key_control.c.o: ../libft/libft.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_key_control.c.o: ../libft/libft_typedefs.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_key_control.c.o: ../libft/vis/checker_v.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_key_control.c.o: ../libft/vis/vis_typedefs.h
+
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_loop_control.c.o: ../fpush_swap/checker_v_loop_control.c
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_loop_control.c.o: ../fpush_swap/push_swap.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_loop_control.c.o: ../fpush_swap/push_swap_typedefs.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_loop_control.c.o: ../libft/ft_gnl/ft_gnl_typedefs.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_loop_control.c.o: ../libft/ft_printf/ft_printf.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_loop_control.c.o: ../libft/ft_printf/ft_printf_typedefs.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_loop_control.c.o: ../libft/libft.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_loop_control.c.o: ../libft/libft_typedefs.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_loop_control.c.o: ../libft/vis/checker_v.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_loop_control.c.o: ../libft/vis/vis_typedefs.h
+
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_mouse_control.c.o: ../fpush_swap/checker_v_mouse_control.c
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_mouse_control.c.o: ../fpush_swap/push_swap.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_mouse_control.c.o: ../fpush_swap/push_swap_typedefs.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_mouse_control.c.o: ../libft/ft_gnl/ft_gnl_typedefs.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_mouse_control.c.o: ../libft/ft_printf/ft_printf.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_mouse_control.c.o: ../libft/ft_printf/ft_printf_typedefs.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_mouse_control.c.o: ../libft/libft.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_mouse_control.c.o: ../libft/libft_typedefs.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_mouse_control.c.o: ../libft/vis/checker_v.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_mouse_control.c.o: ../libft/vis/vis_typedefs.h
 
 CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_utils.c.o: ../fpush_swap/checker_v_utils.c
 CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_utils.c.o: ../fpush_swap/push_swap.h

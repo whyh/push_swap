@@ -1,41 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   checker_v_interaction.c                            :+:      :+:    :+:   */
+/*   checker_v_mouse_control.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/03 16:00:23 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/03/04 18:16:19 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/03/04 21:05:34 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-
-int push_swap_v_key_release(int keycode, void *param)
-{
-	t_push_swap_vis	*vis;
-
-	vis = param;
-	if (keycode == 49 && push_swap_sorted_a(*(vis->stack_a))
-	&& (!vis->stack_b || !*(vis->stack_b)))
-		push_swap_v_start(vis);
-	else if (keycode == 49 && vis->pause == 1)
-		vis->pause = 0;
-	else if (keycode == 49 && vis->pause == 0)
-		vis->pause = 1;
-	else if (keycode == 15)
-		push_swap_v_start(vis);
-	else if (keycode == 4 && vis->help == 1)
-		vis->help = 0;
-	else if (keycode == 8 && vis->count == 0)
-		vis->count = 1;
-	else if (keycode == 8 && vis->count == 1)
-		vis->count = 0;
-	push_swap_v_draw(vis);
-	vis->mpc = 0;
-	return (1);
-}
 
 int push_swap_v_mouse_press(int button, int x, int y, void *param)
 {
@@ -100,62 +75,5 @@ int push_swap_v_mouse_move(int x, int y, void *param)
 	}
 	if (vis->pause == 1)
 		push_swap_v_draw(vis);
-	return (1);
-}
-
-int push_swap_v_key_press(int keycode, void *param)
-{
-	t_push_swap_vis	*vis;
-
-	vis = param;
-	if (keycode == 53 || keycode == 17)
-	{
-		push_swap_exit(vis);
-		exit(0);
-	}
-	else if (keycode == 49)
-	{
-		vis->mpc = 1;
-		push_swap_v_draw(vis);
-	}
-	else if (keycode == 4 && vis->help == 0)
-	{
-		vis->help = 1;
-		push_swap_v_draw(vis);
-	}
-	return (1);
-}
-
-int push_swap_v_close(void *param)
-{
-	t_push_swap_vis	*vis;
-
-	vis = param;
-	push_swap_exit(vis);
-	exit(0);
-	return (1);
-}
-
-int push_swap_v_loop(void *param)
-{
-	t_push_swap_vis	*vis;
-	long long		n;
-
-	vis = param;
-	if (vis->buff && !vis->buff[vis->i])
-	{
-		vis->pause = 1;
-		push_swap_v_draw(vis);
-	}
-	else if (vis->pause == 0)
-	{
-		vis->o++;
-		n = (LL)ft_strchr_i(&(vis->buff[vis->i]), ' ');
-		vis->status = ft_strndup(&(vis->buff[vis->i]), n);
-		push_swap_exec(vis, vis->status);
-		push_swap_v_draw(vis);
-		ft_strdel(&(vis->status));
-		vis->i += n + 1;
-	}
 	return (1);
 }

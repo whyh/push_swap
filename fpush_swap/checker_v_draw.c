@@ -5,112 +5,81 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/02/28 17:45:29 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/03/03 21:31:59 by dderevyn         ###   ########.fr       */
+/*   Created: 2019/03/04 20:00:23 by dderevyn          #+#    #+#             */
+/*   Updated: 2019/03/04 20:00:23 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-static void		static_draw_border(t_push_swap_vis *vis, size_t stack_x, char spec)
+static void	static_draw_h_menu(t_push_swap_vis *vis)
 {
-	size_t	x;
-	size_t	y;
-
-	x = 0;
-	y = 0;
-	while (y < PUSH_SWAP_WIN_Y)
+	if (vis->help)
 	{
-		if (x >= stack_x - PUSH_SWAP_BORDER
-		&& x <= stack_x + PUSH_SWAP_WIDTH + PUSH_SWAP_BORDER
-		&& y >= PUSH_SWAP_STACK_Y - PUSH_SWAP_BORDER
-		&& y <= PUSH_SWAP_STACK_Y + PUSH_SWAP_STACK_H + PUSH_SWAP_BORDER)
-		{
-			if ((vis->ma == 0 && spec == 'a') || (vis->mb == 0 && spec == 'b'))
-				vis->img_data[x + (y * PUSH_SWAP_WIN_X)] = VIS_GREY;
-			else
-				vis->img_data[x + (y * PUSH_SWAP_WIN_X)] = VIS_BRIGHT_GREY;
-		}
-		if (x >= stack_x
-		&& x <= stack_x + PUSH_SWAP_WIDTH + 1&& y >= PUSH_SWAP_STACK_Y
-		&& y <= PUSH_SWAP_STACK_Y + PUSH_SWAP_STACK_H)
-			vis->img_data[x + (y * PUSH_SWAP_WIN_X)] = VIS_BG_GREY;
-		if (++x > PUSH_SWAP_WIN_X && (++y))
-			x = 0;
+		mlx_string_put(
+		vis->mlx, vis->win, 15, 250, PUSH_SWAP_RGB1, "press SPACE");
+		mlx_string_put(
+		vis->mlx, vis->win, 15, 270, PUSH_SWAP_RGB1, "to start/pause");
+		mlx_string_put(
+		vis->mlx, vis->win, 15, 290, PUSH_SWAP_RGB1, "visualisation");
+		mlx_string_put(
+		vis->mlx, vis->win, 15, 360, PUSH_SWAP_RGB1, "press R to set");
+		mlx_string_put
+		(vis->mlx, vis->win, 15, 380, PUSH_SWAP_RGB1, "stacks to the");
+		mlx_string_put(
+		vis->mlx, vis->win, 15, 400, PUSH_SWAP_RGB1, "initial state");
+		mlx_string_put(
+		vis->mlx, vis->win, 15, 470, PUSH_SWAP_RGB1, "press C to turn");
+		mlx_string_put(
+		vis->mlx, vis->win, 15, 490, PUSH_SWAP_RGB1, "on/off counter");
 	}
+	else
+		mlx_string_put(
+		vis->mlx, vis->win, 1350, 970, PUSH_SWAP_RGB2, "use H for help");
 }
 
-void	push_swap_v_draw_bg(t_push_swap_vis *vis)
+static void	static_draw_interface(t_push_swap_vis *vis)
+{
+	if (ft_strlen(vis->status) == 3 && (!push_swap_sorted_a(*(vis->stack_a))
+	|| (vis->stack_b && *(vis->stack_b))))
+		mlx_string_put(
+		vis->mlx, vis->win, 735, 250, PUSH_SWAP_RGB2, vis->status);
+	else if ((!push_swap_sorted_a(*(vis->stack_a))
+	|| (vis->stack_b && *(vis->stack_b))) && ft_strlen(vis->status) == 2)
+		mlx_string_put(
+		vis->mlx, vis->win, 740, 250, PUSH_SWAP_RGB2, vis->status);
+	else if (push_swap_sorted_a(*(vis->stack_a))
+	&& (!vis->stack_b || !*(vis->stack_b)))
+		mlx_string_put(vis->mlx, vis->win, 725, 250, PUSH_SWAP_RGB2, "sorted");
+	if (vis->count)
+		mlx_string_put(
+		vis->mlx, vis->win, 1430, 6, PUSH_SWAP_RGB2, ft_itoabase(DEC, vis->o));
+	mlx_string_put(vis->mlx, vis->win, 390, 100, PUSH_SWAP_RGB2, "STACK A");
+	mlx_string_put(vis->mlx, vis->win, 1040, 100, PUSH_SWAP_RGB2, "STACK B");
+}
+
+static void	static_compose_pic(t_push_swap_vis *vis)
+{
+	push_swap_v_draw_bg(vis);
+	push_swap_v_draw_stack(vis, 'a');
+	push_swap_v_draw_stack(vis, 'b');
+	mlx_put_image_to_window(vis->win, vis->win, vis->img, 0, 0);
+	static_draw_h_menu(vis);
+	static_draw_interface(vis);
+}
+
+void		push_swap_v_draw(t_push_swap_vis *vis)
 {
 	size_t	i;
 
-	i = PUSH_SWAP_WIN_X * PUSH_SWAP_WIN_Y;
-	while (i > 0)
-	{
-		vis->img_data[i] = VIS_BG_GREY;
-		--i;
-	}
-	static_draw_border(vis, PUSH_SWAP_STACK_A_X, 'a');
-	static_draw_border(vis, PUSH_SWAP_STACK_B_X, 'b');
-}
-
-void	push_swap_v_draw_pauseb(t_push_swap_vis *vis)
-{
-	size_t	x;
-	size_t	y;
-
-	x = 0;
-	y = 0;
-	while (y < PUSH_SWAP_WIN_Y)
-	{
-		if (y >= 470 && y <= 580 && ((x >= 700 && x <= 735)
-		|| (x <= 800 && x >= 765)))
-		{
-			if (vis->mc == 0 && vis->mpc == 0)
-				vis->img_data[x + (y * PUSH_SWAP_WIN_X)] = VIS_GREY;
-			else if (vis->mpc == 1)
-				vis->img_data[x + (y * PUSH_SWAP_WIN_X)] = VIS_DARK_GREY;
-			else if (vis->mc == 1)
-				vis->img_data[x + (y * PUSH_SWAP_WIN_X)] = VIS_BRIGHT_GREY;
-		}
-		++x;
-		if (x > PUSH_SWAP_WIN_X)
-		{
-			x = 0;
-			++y;
-		}
-	}
-}
-
-void		push_swap_v_draw_playb(t_push_swap_vis *vis)
-{
-	size_t	x;
-	size_t	y;
-	double	i;
-
-	x = 0;
-	y = 0;
-	i = 100.0;
-	while (y < PUSH_SWAP_WIN_Y)
-	{
-		if (y >= 470 && y <= 580 && x >= 700 && x + i <= 800)
-		{
-			if (vis->mc == 0 && vis->mpc == 0)
-				vis->img_data[x + (y * PUSH_SWAP_WIN_X)] = VIS_GREY;
-			else if (vis->mpc == 1)
-				vis->img_data[x + (y * PUSH_SWAP_WIN_X)] = VIS_DARK_GREY;
-			else if (vis->mc == 1)
-				vis->img_data[x + (y * PUSH_SWAP_WIN_X)] = VIS_BRIGHT_GREY;
-		}
-		++x;
-		if (x > PUSH_SWAP_WIN_X)
-		{
-			if (y >= 470 && y < 525)
-				i -= 100.0 / 55.0;
-			else if (y > 525 && y <= 580)
-				i += 100.0 / 55.0;
-			x = 0;
-			++y;
-		}
-	}
+	if (vis->init_size <= 10)
+		i = 4;
+	else if (vis->init_size <= 50)
+		i = 3;
+	else if (vis->init_size <= 100)
+		i = 2;
+	else
+		i = 1;
+	while (i-- > 0)
+		static_compose_pic(vis);
 }

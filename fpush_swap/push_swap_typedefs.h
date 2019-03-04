@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/17 19:25:04 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/03/04 19:21:03 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/03/04 19:27:03 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,6 @@
 # define PUSH_SWAP_BORDER 6
 # define PUSH_SWAP_RGB1 VIS_MUSTARD_YELLOW
 # define PUSH_SWAP_RGB2 VIS_MAGMA_RED
-//# define PUSH_SWAP_RGB1 13421568
-//# define PUSH_SWAP_RGB2 52224
-
 
 typedef struct				s_push_swap_list
 {
@@ -60,6 +57,7 @@ typedef struct				s_push_swap_vis
 	int 					max;
 	double					h;
 	size_t					size;
+	size_t 					init_size;
 	double					slope;
 	int 					pause;
 	char 					*status;

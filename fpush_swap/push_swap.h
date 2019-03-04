@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/12 11:53:25 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/03/03 21:27:34 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/03/04 20:39:18 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,11 @@ void				push_swap_exec(t_push_swap_vis *vis, char *buff);
 
 void				push_swap_t(t_push_swap_list *stack_a,
 					t_push_swap_list *stack_b, char *status);
-void				push_swap_v_draw_pauseb(t_push_swap_vis *vis);
+
+void				push_swap_v_paint(t_push_swap_vis *vis);
+void				push_swap_v_buff(t_push_swap_vis *vis);
+void				push_swap_v_stack_cp(t_push_swap_list *stack_src,
+					t_push_swap_list **stack_dst);
 
 void				push_swap_v(t_push_swap_vis *vis);
 void				push_swap_v_init(t_push_swap_vis *vis);
@@ -55,7 +59,6 @@ int 				push_swap_v_close(void *param);
 int 				push_swap_v_loop(void *param);
 void				push_swap_v_draw(t_push_swap_vis *vis);
 void				push_swap_v_start(t_push_swap_vis *vis);
-void				push_swap_v_draw_playb(t_push_swap_vis *vis);
 void				push_swap_v_draw_bg(t_push_swap_vis *vis);
 void				push_swap_v_draw_stack(t_push_swap_vis *vis, char spec);
 int 				push_swap_v_mouse_move(int x, int y, void *param);

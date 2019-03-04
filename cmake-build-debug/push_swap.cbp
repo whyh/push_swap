@@ -85,9 +85,6 @@
 		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker.c">
 			<Option target="push_swap_clion"/>
 		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker_t.c">
-			<Option target="push_swap_clion"/>
-		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker_utils.c">
 			<Option target="push_swap_clion"/>
 		</Unit>
@@ -97,16 +94,31 @@
 		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker_v_draw.c">
 			<Option target="push_swap_clion"/>
 		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker_v_draw_bg.c">
+			<Option target="push_swap_clion"/>
+		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker_v_draw_stack.c">
 			<Option target="push_swap_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker_v_init.c">
 			<Option target="push_swap_clion"/>
 		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker_v_interaction.c">
+		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker_v_key_control.c">
+			<Option target="push_swap_clion"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker_v_loop_control.c">
+			<Option target="push_swap_clion"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker_v_mouse_control.c">
 			<Option target="push_swap_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker_v_utils.c">
+			<Option target="push_swap_clion"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap.c">
+			<Option target="push_swap_clion"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap.h">
 			<Option target="push_swap_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap_operations.c">
