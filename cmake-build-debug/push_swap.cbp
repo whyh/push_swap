@@ -121,10 +121,19 @@
 		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap.h">
 			<Option target="push_swap_clion"/>
 		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap_avg.c">
+			<Option target="push_swap_clion"/>
+		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap_operations.c">
 			<Option target="push_swap_clion"/>
 		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap_sort.c">
+			<Option target="push_swap_clion"/>
+		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap_utils.c">
+			<Option target="push_swap_clion"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap_utils2.c">
 			<Option target="push_swap_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/shared_funs.c">

@@ -6,7 +6,7 @@
 #    By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/01/21 20:30:28 by dderevyn          #+#    #+#              #
-#    Updated: 2019/03/04 21:23:58 by dderevyn         ###   ########.fr        #
+#    Updated: 2019/03/04 21:24:09 by dderevyn         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -133,6 +133,9 @@ PUSH_SWAP_SRCS =		push_swap.c\
 						push_swap_utils.c\
 						shared_funs.c\
 						shared_operations.c\
+						push_swap_avg.c\
+						push_swap_sort.c\
+						push_swap_utils2.c\
 						shared_parse.c
 PUSH_SWAP_OBJS_DIR = $(OBJS_DIR)
 PUSH_SWAP_OBJS = $(PUSH_SWAP_SRCS:%.c=$(PUSH_SWAP_OBJS_DIR)/%.o)

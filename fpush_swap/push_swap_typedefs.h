@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/17 19:25:04 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/03/04 19:27:03 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/03/04 19:51:40 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,5 +75,7 @@ typedef struct				s_push_swap_vis
 	int 					count;
 	int 					help;
 }							t_push_swap_vis;
+
+t_push_swap_list			*push_swap_prev(t_push_swap_list *stack, int group);
 
 #endif

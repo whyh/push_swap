@@ -447,6 +447,33 @@ fpush_swap/push_swap.c.s:
 	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap.c.s
 .PHONY : fpush_swap/push_swap.c.s
 
+fpush_swap/push_swap_avg.o: fpush_swap/push_swap_avg.c.o
+
+.PHONY : fpush_swap/push_swap_avg.o
+
+# target to build an object file
+fpush_swap/push_swap_avg.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_avg.c.o
+.PHONY : fpush_swap/push_swap_avg.c.o
+
+fpush_swap/push_swap_avg.i: fpush_swap/push_swap_avg.c.i
+
+.PHONY : fpush_swap/push_swap_avg.i
+
+# target to preprocess a source file
+fpush_swap/push_swap_avg.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_avg.c.i
+.PHONY : fpush_swap/push_swap_avg.c.i
+
+fpush_swap/push_swap_avg.s: fpush_swap/push_swap_avg.c.s
+
+.PHONY : fpush_swap/push_swap_avg.s
+
+# target to generate assembly for a file
+fpush_swap/push_swap_avg.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_avg.c.s
+.PHONY : fpush_swap/push_swap_avg.c.s
+
 fpush_swap/push_swap_operations.o: fpush_swap/push_swap_operations.c.o
 
 .PHONY : fpush_swap/push_swap_operations.o
@@ -474,6 +501,33 @@ fpush_swap/push_swap_operations.c.s:
 	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_operations.c.s
 .PHONY : fpush_swap/push_swap_operations.c.s
 
+fpush_swap/push_swap_sort.o: fpush_swap/push_swap_sort.c.o
+
+.PHONY : fpush_swap/push_swap_sort.o
+
+# target to build an object file
+fpush_swap/push_swap_sort.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_sort.c.o
+.PHONY : fpush_swap/push_swap_sort.c.o
+
+fpush_swap/push_swap_sort.i: fpush_swap/push_swap_sort.c.i
+
+.PHONY : fpush_swap/push_swap_sort.i
+
+# target to preprocess a source file
+fpush_swap/push_swap_sort.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_sort.c.i
+.PHONY : fpush_swap/push_swap_sort.c.i
+
+fpush_swap/push_swap_sort.s: fpush_swap/push_swap_sort.c.s
+
+.PHONY : fpush_swap/push_swap_sort.s
+
+# target to generate assembly for a file
+fpush_swap/push_swap_sort.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_sort.c.s
+.PHONY : fpush_swap/push_swap_sort.c.s
+
 fpush_swap/push_swap_utils.o: fpush_swap/push_swap_utils.c.o
 
 .PHONY : fpush_swap/push_swap_utils.o
@@ -500,6 +554,33 @@ fpush_swap/push_swap_utils.s: fpush_swap/push_swap_utils.c.s
 fpush_swap/push_swap_utils.c.s:
 	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_utils.c.s
 .PHONY : fpush_swap/push_swap_utils.c.s
+
+fpush_swap/push_swap_utils2.o: fpush_swap/push_swap_utils2.c.o
+
+.PHONY : fpush_swap/push_swap_utils2.o
+
+# target to build an object file
+fpush_swap/push_swap_utils2.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_utils2.c.o
+.PHONY : fpush_swap/push_swap_utils2.c.o
+
+fpush_swap/push_swap_utils2.i: fpush_swap/push_swap_utils2.c.i
+
+.PHONY : fpush_swap/push_swap_utils2.i
+
+# target to preprocess a source file
+fpush_swap/push_swap_utils2.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_utils2.c.i
+.PHONY : fpush_swap/push_swap_utils2.c.i
+
+fpush_swap/push_swap_utils2.s: fpush_swap/push_swap_utils2.c.s
+
+.PHONY : fpush_swap/push_swap_utils2.s
+
+# target to generate assembly for a file
+fpush_swap/push_swap_utils2.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_utils2.c.s
+.PHONY : fpush_swap/push_swap_utils2.c.s
 
 fpush_swap/shared_funs.o: fpush_swap/shared_funs.c.o
 
@@ -1788,12 +1869,21 @@ help:
 	@echo "... fpush_swap/push_swap.o"
 	@echo "... fpush_swap/push_swap.i"
 	@echo "... fpush_swap/push_swap.s"
+	@echo "... fpush_swap/push_swap_avg.o"
+	@echo "... fpush_swap/push_swap_avg.i"
+	@echo "... fpush_swap/push_swap_avg.s"
 	@echo "... fpush_swap/push_swap_operations.o"
 	@echo "... fpush_swap/push_swap_operations.i"
 	@echo "... fpush_swap/push_swap_operations.s"
+	@echo "... fpush_swap/push_swap_sort.o"
+	@echo "... fpush_swap/push_swap_sort.i"
+	@echo "... fpush_swap/push_swap_sort.s"
 	@echo "... fpush_swap/push_swap_utils.o"
 	@echo "... fpush_swap/push_swap_utils.i"
 	@echo "... fpush_swap/push_swap_utils.s"
+	@echo "... fpush_swap/push_swap_utils2.o"
+	@echo "... fpush_swap/push_swap_utils2.i"
+	@echo "... fpush_swap/push_swap_utils2.s"
 	@echo "... fpush_swap/shared_funs.o"
 	@echo "... fpush_swap/shared_funs.i"
 	@echo "... fpush_swap/shared_funs.s"

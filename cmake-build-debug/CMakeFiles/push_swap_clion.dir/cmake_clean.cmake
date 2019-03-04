@@ -59,6 +59,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/push_swap_clion.dir/fpush_swap/shared_operations.c.o"
   "CMakeFiles/push_swap_clion.dir/fpush_swap/shared_parse.c.o"
   "CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_draw.c.o"
+  "CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_avg.c.o"
+  "CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_sort.c.o"
+  "CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_utils2.c.o"
   "push_swap_clion.pdb"
   "push_swap_clion"
 )
