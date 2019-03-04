@@ -6,7 +6,7 @@
 #    By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/01/21 20:30:28 by dderevyn          #+#    #+#              #
-#    Updated: 2019/03/03 16:58:54 by dderevyn         ###   ########.fr        #
+#    Updated: 2019/03/04 19:17:51 by dderevyn         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -294,7 +294,7 @@ runp:
 
 run1:
 #	@./push_swap $(ARG500) || true
-	@./push_swap $(ARG32) || true
+	@./push_swap $(ARG32) | ./checker -v $(ARG32) || true
 
 run:
 	@./push_swap $(ARG500) | ./checker $(ARG500) || true

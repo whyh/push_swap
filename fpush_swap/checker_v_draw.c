@@ -32,7 +32,7 @@ static void		static_draw_border(t_push_swap_vis *vis, size_t stack_x, char spec)
 				vis->img_data[x + (y * PUSH_SWAP_WIN_X)] = VIS_BRIGHT_GREY;
 		}
 		if (x >= stack_x
-		&& x <= stack_x + PUSH_SWAP_WIDTH && y >= PUSH_SWAP_STACK_Y
+		&& x <= stack_x + PUSH_SWAP_WIDTH + 1&& y >= PUSH_SWAP_STACK_Y
 		&& y <= PUSH_SWAP_STACK_Y + PUSH_SWAP_STACK_H)
 			vis->img_data[x + (y * PUSH_SWAP_WIN_X)] = VIS_BG_GREY;
 		if (++x > PUSH_SWAP_WIN_X && (++y))

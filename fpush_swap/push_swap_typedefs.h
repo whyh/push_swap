@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/17 19:25:04 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/03/03 21:07:25 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/03/04 19:21:03 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,11 @@
 # define PUSH_SWAP_STACK_B_X 950
 # define PUSH_SWAP_STACK_Y 130
 # define PUSH_SWAP_STACK_H 800
-# define PUSH_SWAP_BORDER 5
-# define PUSH_SWAP_RGB1 13421568
-# define PUSH_SWAP_RGB2 52224
+# define PUSH_SWAP_BORDER 6
+# define PUSH_SWAP_RGB1 VIS_MUSTARD_YELLOW
+# define PUSH_SWAP_RGB2 VIS_MAGMA_RED
+//# define PUSH_SWAP_RGB1 13421568
+//# define PUSH_SWAP_RGB2 52224
 
 
 typedef struct				s_push_swap_list
@@ -56,7 +58,7 @@ typedef struct				s_push_swap_vis
 	int						*img_data;
 	int						min;
 	int 					max;
-	size_t					h;
+	double					h;
 	size_t					size;
 	double					slope;
 	int 					pause;
@@ -71,6 +73,9 @@ typedef struct				s_push_swap_vis
 	int 					ma;
 	int 					mb;
 	int 					mpc;
+	int 					o;
+	int 					count;
+	int 					help;
 }							t_push_swap_vis;
 
 #endif

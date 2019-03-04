@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/28 17:47:36 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/03/03 22:52:15 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/03/04 17:41:23 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,8 +42,10 @@ void	push_swap_v_draw_stack(t_push_swap_vis *vis, char spec)
 	double				width;
 	int					padd;
 	size_t				i;
+	double 				err;
 
 	static_init(vis, spec, &padd, &stack);
+	err = 0;
 	while (vis->size--)
 	{
 		i = 0;
@@ -53,7 +55,15 @@ void	push_swap_v_draw_stack(t_push_swap_vis *vis, char spec)
 		* PUSH_SWAP_SLOPE + PUSH_SWAP_WIDTH - PUSH_SWAP_SLOPE;
 		vis->data.x0 = padd + ((PUSH_SWAP_WIDTH - width) / 2.0);
 		vis->data.x1 = padd + width + ((PUSH_SWAP_WIDTH - width) / 2.0);
-		while (i++ < vis->h)
+		err += vis->h - (int)vis->h;
+		if (err >= 1.0)
+		{
+			err -= 1.0;
+			ft_wu_line(vis->data);
+			vis->data.y0++;
+			vis->data.y1++;
+		}
+		while (i++ < (size_t)vis->h)
 		{
 			vis->data.x0 -= vis->slope;
 			vis->data.x1 += vis->slope;

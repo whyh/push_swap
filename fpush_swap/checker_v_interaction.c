@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/03 16:00:23 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/03/03 22:03:47 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/03/04 18:16:19 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,19 +20,20 @@ int push_swap_v_key_release(int keycode, void *param)
 	if (keycode == 49 && push_swap_sorted_a(*(vis->stack_a))
 	&& (!vis->stack_b || !*(vis->stack_b)))
 		push_swap_v_start(vis);
-	if (keycode == 49 && vis->pause == 1)
-	{
+	else if (keycode == 49 && vis->pause == 1)
 		vis->pause = 0;
-		vis->mpc = 0;
-	}
 	else if (keycode == 49 && vis->pause == 0)
-	{
 		vis->pause = 1;
-		vis->mpc = 0;
-	}
 	else if (keycode == 15)
 		push_swap_v_start(vis);
+	else if (keycode == 4 && vis->help == 1)
+		vis->help = 0;
+	else if (keycode == 8 && vis->count == 0)
+		vis->count = 1;
+	else if (keycode == 8 && vis->count == 1)
+		vis->count = 0;
 	push_swap_v_draw(vis);
+	vis->mpc = 0;
 	return (1);
 }
 
@@ -117,6 +118,11 @@ int push_swap_v_key_press(int keycode, void *param)
 		vis->mpc = 1;
 		push_swap_v_draw(vis);
 	}
+	else if (keycode == 4 && vis->help == 0)
+	{
+		vis->help = 1;
+		push_swap_v_draw(vis);
+	}
 	return (1);
 }
 
@@ -143,6 +149,7 @@ int push_swap_v_loop(void *param)
 	}
 	else if (vis->pause == 0)
 	{
+		vis->o++;
 		n = (LL)ft_strchr_i(&(vis->buff[vis->i]), ' ');
 		vis->status = ft_strndup(&(vis->buff[vis->i]), n);
 		push_swap_exec(vis, vis->status);
