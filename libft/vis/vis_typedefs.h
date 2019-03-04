@@ -24,12 +24,11 @@
 # define VIS_BRIGHT_GREY 10526880
 # define VIS_DARK_GREY 4210752
 
-
 typedef struct			s_vis2d
 {
 	int					*img_data;
-	int 				x_max;
-	int 				y_max;
+	int					x_max;
+	int					y_max;
 	double				x0;
 	double				y0;
 	double				x1;
@@ -39,7 +38,7 @@ typedef struct			s_vis2d
 	int					r;
 	int					rv;
 	double				x;
-	double 				y;
+	double				y;
 	double				dx;
 	double				dy;
 	double				slope;

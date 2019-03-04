@@ -14,15 +14,16 @@
 
 static void	static_shift_a(t_push_swap_data *data)
 {
-		push_swap_next(*data, data->stack_b, &(data->stack_next_next),
-		data->stack_next);
-		while (data->stack_next->value > data->stack_a->value
-		&& (data->stack_next->value > data->stack_a->next->value))
-//		|| (valid_next_next(data) && data->stack_next_next->value > data->stack_a->value)))
-		{
-			push_swap_rotate(data, 'a');
-			data->i++;
-		}
+	push_swap_next(*data, data->stack_b, &(data->stack_next_next),
+	data->stack_next);
+	while (data->stack_next->value > data->stack_a->value
+	&& (data->stack_next->value > data->stack_a->next->value))
+//	|| (valid_next_next(data)
+// 	&& data->stack_next_next->value > data->stack_a->value)))
+	{
+		push_swap_rotate(data, 'a');
+		data->i++;
+	}
 }
 
 void		push_swap_sort(t_push_swap_data *data, char stack)

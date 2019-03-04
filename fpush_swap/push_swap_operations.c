@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/17 20:36:54 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/02/23 16:39:19 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/03/04 22:20:12 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	push_swap_swap(t_push_swap_data *data, char stack)
 	if (stack == 'b'
 	|| (data->stack_b && data->stack_b->value < data->stack_b->next->value
 	&& (data->stack_b->value > data->stack_b->next->next->value
-	|| data->stack_b->next->next == data->stack_b)))//TODO rm if 5 is separrateed in dif category
+	|| data->stack_b->next->next == data->stack_b)))
 	{
 		push_swap_ss(&(data->stack_b));
 		ft_strninject(&(data->buff), "sb ", -1, -1);
@@ -39,8 +39,8 @@ void	push_swap_rotate_rev(t_push_swap_data *data, char stack)
 		ft_strninject(&(data->buff), "rra ", -1, -1);
 	}
 	if (stack == 'b'
-	|| (data->stack_b
-	&& push_swap_prev(data->stack_b, data->group)->value > data->stack_b->value))
+	|| (data->stack_b && push_swap_prev(data->stack_b, data->group)->value
+	> data->stack_b->value))
 	{
 		push_swap_rrr(&(data->stack_b));
 		ft_strninject(&(data->buff), "rrb ", -1, -1);

@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/17 19:25:04 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/03/04 19:51:40 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/03/04 22:09:08 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,33 +47,33 @@ typedef struct				s_push_swap_data
 
 typedef struct				s_push_swap_vis
 {
-	int 					t;
+	t_vis2d					data;
+	t_push_swap_list		**stack_b;
+	t_push_swap_list		**stack_a;
+	t_push_swap_list		**stack_buff;
+	int						t;
 	int						v;
 	void					*mlx;
 	void					*win;
 	void					*img;
 	int						*img_data;
-	int						min;
-	int 					max;
-	double					h;
-	size_t					size;
-	size_t 					init_size;
-	double					slope;
-	int 					pause;
-	char 					*status;
 	char					*buff;
-	t_push_swap_list		**stack_b;
-	t_push_swap_list		**stack_a;
-	t_push_swap_list		**stack_buff;
-	t_vis2d					data;
-	int 					i;
-	int 					mc;
-	int 					ma;
-	int 					mb;
-	int 					mpc;
-	int 					o;
-	int 					count;
-	int 					help;
+	char					*status;
+	int						i;
+	int						min;
+	int						max;
+	size_t					size;
+	size_t					init_size;
+	double					h;
+	double					slope;
+	int						pause;
+	int						mc;
+	int						mpc;
+	int						ma;
+	int						mb;
+	int						o;
+	int						count;
+	int						help;
 }							t_push_swap_vis;
 
 t_push_swap_list			*push_swap_prev(t_push_swap_list *stack, int group);

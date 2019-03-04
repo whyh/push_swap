@@ -34,6 +34,8 @@ add_executable(push_swap_clion
         fpush_swap/checker_v_draw.c
         fpush_swap/checker_v_key_control.c
         fpush_swap/checker_v_loop_control.c
-        fpush_swap/push_swap_avg.c fpush_swap/push_swap_sort.c fpush_swap/push_swap_utils2.c)
+        fpush_swap/push_swap_avg.c
+        fpush_swap/push_swap_sort.c
+        fpush_swap/push_swap_utils2.c)
 
 target_link_libraries(push_swap_clion "-framework OpenGL" "-framework AppKit" "-lmlx")

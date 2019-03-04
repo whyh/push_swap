@@ -6,13 +6,13 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/23 23:23:35 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/03/04 20:00:04 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/03/04 21:02:54 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void		push_swap_v_start(t_push_swap_vis *vis)
+void	push_swap_v_start(t_push_swap_vis *vis)
 {
 	vis->status = "init";
 	vis->i = 0;
@@ -31,7 +31,7 @@ void		push_swap_v_start(t_push_swap_vis *vis)
 	}
 }
 
-void		push_swap_v(t_push_swap_vis *vis)
+void	push_swap_v(t_push_swap_vis *vis)
 {
 	push_swap_v_init(vis);
 	push_swap_v_start(vis);

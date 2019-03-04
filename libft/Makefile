@@ -119,6 +119,8 @@ norm:
 	$(addprefix $(GNL_PATH),$(GNL_SRCS)) \
 	$(addprefix $(GNL_PATH),$(GNL_INCS)) \
 	$(addprefix $(PRINTF_PATH),$(PRINTF_SRCS)) \
-	$(addprefix $(PRINTF_PATH),$(PRINTF_INCS))
+	$(addprefix $(PRINTF_PATH),$(PRINTF_INCS)) \
+	$(addprefix $(VIS_PATH),$(VIS_SRCS)) \
+    $(addprefix $(VIS_PATH),$(VIS_INCS))
 
 .PHONY: all clean fclean re norm
