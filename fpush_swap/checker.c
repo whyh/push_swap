@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/17 15:52:37 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/03/03 17:12:20 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/03/04 23:37:31 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,8 @@ static void	push_swap_exec2(t_push_swap_vis *vis, char *buff)
 
 void	push_swap_exec(t_push_swap_vis *vis, char *buff)
 {
+	if (!buff)
+		return ;
 	if (ft_strncmp(buff, "rra", -1) && *(vis->stack_a))
 		push_swap_rrr(vis->stack_a);
 	else if (ft_strncmp(buff, "rrb", -1) && *(vis->stack_b))
@@ -83,7 +85,7 @@ static void	push_swap_checker(t_push_swap_vis *vis)
 	{
 		if (buff && !push_swap_valid(buff))
 		{
-			ft_printf("error: ...\n");
+			ft_printf("[redError: invalid instruction\n");
 			ft_strdel(&buff);
 			break ;
 		}
@@ -103,23 +105,23 @@ int			main(int argc, char **argv)
 	t_push_swap_list	*stack_b;
 	size_t				i;
 
-	if (argc < 2)
+	if (argc == 1 && ft_printf("[redError: no arguments received\n"))
 	{
-		ft_printf("error: invalid argument\n");
-		ft_printf("usage: ./push_swap \"1 3 2 4 5 7 6 8 0 9\"\n");
+		ft_printf(
+		"[greenUsage:~] ./push_swap \"1 3 2\" | ./checker -v \"1 3 2\"\n");
 		return (0);
 	}
 	push_swap_parse_vt(argv[1], &vis, &i);
 	if (!push_swap_parse(vis.stack_a, (size_t)(argc - 1), argv, 1 + i))
 	{
 		push_swap_free_stack(vis.stack_a);
-		ft_printf("error: invalid parameter\n");
-		ft_printf("usage: ./push_swap \"1 3 2 4 5 7 6 8 0 9\"\n");
+		ft_printf(
+		"[greenUsage:~] ./push_swap \"1 3 2\" | ./checker -v \"1 3 2\"\n");
 		return (0);
 	}
 	stack_b = NULL;
 	vis.stack_b = &stack_b;
-	if (vis.v && push_swap_stack_size(*(vis.stack_a)) <= 800)
+	if (vis.v && *(vis.stack_a) && push_swap_stack_size(*(vis.stack_a)) <= 800)
 		push_swap_v(&vis);
 	else
 		push_swap_checker(&vis);

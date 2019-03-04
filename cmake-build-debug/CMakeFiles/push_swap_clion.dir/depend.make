@@ -133,6 +133,17 @@ CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_utils.c.o: ../libft/libft_ty
 CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_utils.c.o: ../libft/vis/checker_v.h
 CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_utils.c.o: ../libft/vis/vis_typedefs.h
 
+CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_avg.c.o: ../fpush_swap/push_swap.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_avg.c.o: ../fpush_swap/push_swap_avg.c
+CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_avg.c.o: ../fpush_swap/push_swap_typedefs.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_avg.c.o: ../libft/ft_gnl/ft_gnl_typedefs.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_avg.c.o: ../libft/ft_printf/ft_printf.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_avg.c.o: ../libft/ft_printf/ft_printf_typedefs.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_avg.c.o: ../libft/libft.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_avg.c.o: ../libft/libft_typedefs.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_avg.c.o: ../libft/vis/checker_v.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_avg.c.o: ../libft/vis/vis_typedefs.h
+
 CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_operations.c.o: ../fpush_swap/push_swap.h
 CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_operations.c.o: ../fpush_swap/push_swap_operations.c
 CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_operations.c.o: ../fpush_swap/push_swap_typedefs.h
@@ -144,6 +155,17 @@ CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_operations.c.o: ../libft/lib
 CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_operations.c.o: ../libft/vis/checker_v.h
 CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_operations.c.o: ../libft/vis/vis_typedefs.h
 
+CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_sort.c.o: ../fpush_swap/push_swap.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_sort.c.o: ../fpush_swap/push_swap_sort.c
+CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_sort.c.o: ../fpush_swap/push_swap_typedefs.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_sort.c.o: ../libft/ft_gnl/ft_gnl_typedefs.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_sort.c.o: ../libft/ft_printf/ft_printf.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_sort.c.o: ../libft/ft_printf/ft_printf_typedefs.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_sort.c.o: ../libft/libft.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_sort.c.o: ../libft/libft_typedefs.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_sort.c.o: ../libft/vis/checker_v.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_sort.c.o: ../libft/vis/vis_typedefs.h
+
 CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_utils.c.o: ../fpush_swap/push_swap.h
 CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_utils.c.o: ../fpush_swap/push_swap_typedefs.h
 CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_utils.c.o: ../fpush_swap/push_swap_utils.c
@@ -154,6 +176,17 @@ CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_utils.c.o: ../libft/libft.h
 CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_utils.c.o: ../libft/libft_typedefs.h
 CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_utils.c.o: ../libft/vis/checker_v.h
 CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_utils.c.o: ../libft/vis/vis_typedefs.h
+
+CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_utils2.c.o: ../fpush_swap/push_swap.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_utils2.c.o: ../fpush_swap/push_swap_typedefs.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_utils2.c.o: ../fpush_swap/push_swap_utils2.c
+CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_utils2.c.o: ../libft/ft_gnl/ft_gnl_typedefs.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_utils2.c.o: ../libft/ft_printf/ft_printf.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_utils2.c.o: ../libft/ft_printf/ft_printf_typedefs.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_utils2.c.o: ../libft/libft.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_utils2.c.o: ../libft/libft_typedefs.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_utils2.c.o: ../libft/vis/checker_v.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_utils2.c.o: ../libft/vis/vis_typedefs.h
 
 CMakeFiles/push_swap_clion.dir/fpush_swap/shared_funs.c.o: ../fpush_swap/push_swap.h
 CMakeFiles/push_swap_clion.dir/fpush_swap/shared_funs.c.o: ../fpush_swap/push_swap_typedefs.h

@@ -19,8 +19,7 @@ int push_swap_v_key_release(int keycode, void *param)
 	vis = param;
 	vis->mpc = 0;
 	vis->mc = 0;
-	if (keycode == 49 && push_swap_sorted_a(*(vis->stack_a))
-		&& (!vis->stack_b || !*(vis->stack_b)))
+	if (keycode == 49 && (!vis->buff || !vis->buff[vis->i]))
 		push_swap_v_start(vis);
 	else if (keycode == 49 && vis->pause == 1)
 		vis->pause = 0;

@@ -23,7 +23,7 @@ int push_swap_v_loop(void *param)
 		vis->pause = 1;
 		push_swap_v_draw(vis);
 	}
-	else if (vis->pause == 0)
+	else if (vis->buff && vis->pause == 0)
 	{
 		vis->o++;
 		n = (LL)ft_strchr_i(&(vis->buff[vis->i]), ' ');

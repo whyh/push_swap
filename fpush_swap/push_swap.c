@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/12 11:35:38 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/03/04 21:44:24 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/03/04 23:37:31 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,17 +78,16 @@ int			main(int argc, char **argv)
 {
 	t_push_swap_data	data;
 
-	if (argc < 2)
+	if (argc == 1)
 	{
-		ft_printf("error: invalid usage\n");
-		ft_printf("usage: ./push_swap \"1 3 2 4 5 7 6 8 0 9\"\n");
+		ft_printf("[redError: no arguments received\n");
+		ft_printf("[greenUsage:~] ./push_swap \"1 3 2\"\n");
 		return (0);
 	}
 	if (!push_swap_parse(&(data.stack_a), (size_t)(argc - 1), argv, 1))
 	{
 		push_swap_free_stack(&(data.stack_a));
-		ft_printf("error: invalid argument\n");
-		ft_printf("usage: ./push_swap \"1 3 2 4 5 7 6 8 0 9\"\n");
+		ft_printf("[greenUsage:~] ./push_swap \"1 3 2\"\n");
 		return (0);
 	}
 	static_sort(&data);

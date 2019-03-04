@@ -133,9 +133,31 @@ CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_utils.c.o
  /Users/dderevyn/CLionProjects/push_swap/libft/libft_typedefs.h
  /Users/dderevyn/CLionProjects/push_swap/libft/vis/checker_v.h
  /Users/dderevyn/CLionProjects/push_swap/libft/vis/vis_typedefs.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_avg.c.o
+ /Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap.h
+ /Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap_avg.c
+ /Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap_typedefs.h
+ /Users/dderevyn/CLionProjects/push_swap/libft/ft_gnl/ft_gnl_typedefs.h
+ /Users/dderevyn/CLionProjects/push_swap/libft/ft_printf/ft_printf.h
+ /Users/dderevyn/CLionProjects/push_swap/libft/ft_printf/ft_printf_typedefs.h
+ /Users/dderevyn/CLionProjects/push_swap/libft/libft.h
+ /Users/dderevyn/CLionProjects/push_swap/libft/libft_typedefs.h
+ /Users/dderevyn/CLionProjects/push_swap/libft/vis/checker_v.h
+ /Users/dderevyn/CLionProjects/push_swap/libft/vis/vis_typedefs.h
 CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_operations.c.o
  /Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap.h
  /Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap_operations.c
+ /Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap_typedefs.h
+ /Users/dderevyn/CLionProjects/push_swap/libft/ft_gnl/ft_gnl_typedefs.h
+ /Users/dderevyn/CLionProjects/push_swap/libft/ft_printf/ft_printf.h
+ /Users/dderevyn/CLionProjects/push_swap/libft/ft_printf/ft_printf_typedefs.h
+ /Users/dderevyn/CLionProjects/push_swap/libft/libft.h
+ /Users/dderevyn/CLionProjects/push_swap/libft/libft_typedefs.h
+ /Users/dderevyn/CLionProjects/push_swap/libft/vis/checker_v.h
+ /Users/dderevyn/CLionProjects/push_swap/libft/vis/vis_typedefs.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_sort.c.o
+ /Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap.h
+ /Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap_sort.c
  /Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap_typedefs.h
  /Users/dderevyn/CLionProjects/push_swap/libft/ft_gnl/ft_gnl_typedefs.h
  /Users/dderevyn/CLionProjects/push_swap/libft/ft_printf/ft_printf.h
@@ -148,6 +170,17 @@ CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_utils.c.o
  /Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap.h
  /Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap_typedefs.h
  /Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap_utils.c
+ /Users/dderevyn/CLionProjects/push_swap/libft/ft_gnl/ft_gnl_typedefs.h
+ /Users/dderevyn/CLionProjects/push_swap/libft/ft_printf/ft_printf.h
+ /Users/dderevyn/CLionProjects/push_swap/libft/ft_printf/ft_printf_typedefs.h
+ /Users/dderevyn/CLionProjects/push_swap/libft/libft.h
+ /Users/dderevyn/CLionProjects/push_swap/libft/libft_typedefs.h
+ /Users/dderevyn/CLionProjects/push_swap/libft/vis/checker_v.h
+ /Users/dderevyn/CLionProjects/push_swap/libft/vis/vis_typedefs.h
+CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_utils2.c.o
+ /Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap.h
+ /Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap_typedefs.h
+ /Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap_utils2.c
  /Users/dderevyn/CLionProjects/push_swap/libft/ft_gnl/ft_gnl_typedefs.h
  /Users/dderevyn/CLionProjects/push_swap/libft/ft_printf/ft_printf.h
  /Users/dderevyn/CLionProjects/push_swap/libft/ft_printf/ft_printf_typedefs.h

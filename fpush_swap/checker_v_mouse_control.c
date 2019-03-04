@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/03 16:00:23 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/03/04 21:05:34 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/03/04 22:54:08 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,18 +20,14 @@ int push_swap_v_mouse_press(int button, int x, int y, void *param)
 	if (button == 1 && x >= 700 && x <= 800 && y >= 470 && y <= 580)
 	{
 		vis->mpc = 1;
-		if (push_swap_sorted_a(*(vis->stack_a))
-		&& (!vis->stack_b || !*(vis->stack_b)))
-		{
+		if (!vis->buff || !vis->buff[vis->i])
 			push_swap_v_start(vis);
-			push_swap_v_draw(vis);
-		}
 		else if (vis->pause == 0)
 			vis->pause = 1;
 		else if (vis->pause == 1)
 			vis->pause = 0;
-		push_swap_v_draw(vis);
 	}
+	push_swap_v_draw(vis);
 	return (1);
 }
 
@@ -39,14 +35,12 @@ int push_swap_v_mouse_release(int button, int x, int y, void *param)
 {
 	t_push_swap_vis	*vis;
 
-	vis = param;
 	(void)x;
 	(void)y;
+	vis = param;
 	if (button == 1)
-	{
 		vis->mpc = 0;
-		push_swap_v_draw(vis);
-	}
+	push_swap_v_draw(vis);
 	return (1);
 }
 

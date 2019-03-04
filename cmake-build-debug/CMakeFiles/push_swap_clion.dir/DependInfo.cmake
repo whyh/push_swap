@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/checker.c.o"
+  "/Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker_t.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/checker_t.c.o"
   "/Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker_utils.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/checker_utils.c.o"
   "/Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker_v.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v.c.o"
   "/Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker_v_draw.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_draw.c.o"
@@ -15,7 +16,6 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker_v_loop_control.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_loop_control.c.o"
   "/Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker_v_mouse_control.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_mouse_control.c.o"
   "/Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker_v_utils.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_utils.c.o"
-  "/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap.c.o"
   "/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap_avg.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_avg.c.o"
   "/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap_operations.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_operations.c.o"
   "/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap_sort.c" "/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap_sort.c.o"
