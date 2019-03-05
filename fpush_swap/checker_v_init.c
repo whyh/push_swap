@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/03 16:19:44 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/03/04 20:39:18 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/03/05 16:51:32 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,9 +48,9 @@ static void	static_simplify_min(t_push_swap_vis *vis, int *min, int *min_prev,
 	*min_prev = *min;
 }
 
-static void	static_simplify(t_push_swap_vis *vis, t_push_swap_list	*stack)
+static void	static_simplify(t_push_swap_vis *vis, t_push_swap_list *stack)
 {
-	int 				min;
+	int					min;
 	size_t				i;
 	int					min_prev;
 	t_push_swap_list	*stack_save;
@@ -87,7 +87,7 @@ static void	static_base_slope(t_push_swap_vis *vis)
 	vis->slope = (width1 - width0) * PUSH_SWAP_SLOPE / vis->h / 2;
 }
 
-void	push_swap_v_init(t_push_swap_vis *vis)
+void		push_swap_v_init(t_push_swap_vis *vis)
 {
 	int	trash;
 

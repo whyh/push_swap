@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/17 15:52:37 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/03/04 23:37:31 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/03/05 16:49:08 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ static void	push_swap_exec2(t_push_swap_vis *vis, char *buff)
 	}
 }
 
-void	push_swap_exec(t_push_swap_vis *vis, char *buff)
+void		push_swap_exec(t_push_swap_vis *vis, char *buff)
 {
 	if (!buff)
 		return ;
@@ -63,7 +63,7 @@ void	push_swap_exec(t_push_swap_vis *vis, char *buff)
 		push_swap_t(*(vis->stack_a), *(vis->stack_b), buff);
 }
 
-int	push_swap_valid(char *buff)
+int			push_swap_valid(char *buff)
 {
 	if (ft_strncmp(buff, "rra", -1) || ft_strncmp(buff, "rrb", -1)
 	|| ft_strncmp(buff, "sa", -1) || ft_strncmp(buff, "sb", -1)

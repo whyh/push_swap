@@ -12,7 +12,7 @@
 
 #include "push_swap.h"
 
-int push_swap_v_loop(void *param)
+int	push_swap_v_loop(void *param)
 {
 	t_push_swap_vis	*vis;
 	long long		n;
@@ -36,7 +36,7 @@ int push_swap_v_loop(void *param)
 	return (1);
 }
 
-int push_swap_v_close(void *param)
+int	push_swap_v_close(void *param)
 {
 	t_push_swap_vis	*vis;
 

@@ -50,7 +50,7 @@ static void	static_draw_pauseb(t_push_swap_vis *vis)
 	while (y < PUSH_SWAP_WIN_Y)
 	{
 		if (y >= 470 && y <= 580 && ((x >= 700 && x <= 735)
-									 || (x <= 800 && x >= 765)))
+		|| (x <= 800 && x >= 765)))
 		{
 			if (vis->mc == 0 && vis->mpc == 0)
 				vis->img_data[x + (y * PUSH_SWAP_WIN_X)] = VIS_GREY;
@@ -114,5 +114,3 @@ void		push_swap_v_draw_bg(t_push_swap_vis *vis)
 	else
 		static_draw_pauseb(vis);
 }
-
-

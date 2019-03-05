@@ -12,7 +12,7 @@
 
 #include "push_swap.h"
 
-int push_swap_v_mouse_press(int button, int x, int y, void *param)
+int	push_swap_v_mouse_press(int button, int x, int y, void *param)
 {
 	t_push_swap_vis	*vis;
 
@@ -31,7 +31,7 @@ int push_swap_v_mouse_press(int button, int x, int y, void *param)
 	return (1);
 }
 
-int push_swap_v_mouse_release(int button, int x, int y, void *param)
+int	push_swap_v_mouse_release(int button, int x, int y, void *param)
 {
 	t_push_swap_vis	*vis;
 
@@ -44,7 +44,7 @@ int push_swap_v_mouse_release(int button, int x, int y, void *param)
 	return (1);
 }
 
-int push_swap_v_mouse_move(int x, int y, void *param)
+int	push_swap_v_mouse_move(int x, int y, void *param)
 {
 	t_push_swap_vis	*vis;
 

@@ -33,7 +33,6 @@ static void	static_init(t_push_swap_vis *vis, char spec, int *padd,
 		*padd = PUSH_SWAP_STACK_B_X;
 		*stack = *(vis->stack_b);
 	}
-
 }
 
 static void	static_calc(t_push_swap_vis *vis, t_push_swap_list *stack, int padd,
@@ -62,7 +61,7 @@ void		push_swap_v_draw_stack(t_push_swap_vis *vis, char spec)
 	t_push_swap_list	*stack;
 	int					padd;
 	size_t				i;
-	double 				err;
+	double				err;
 
 	static_init(vis, spec, &padd, &stack);
 	err = 0;

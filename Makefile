@@ -6,7 +6,7 @@
 #    By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/01/21 20:30:28 by dderevyn          #+#    #+#              #
-#    Updated: 2019/03/05 16:37:22 by dderevyn         ###   ########.fr        #
+#    Updated: 2019/03/05 16:38:25 by dderevyn         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -195,7 +195,10 @@ re: fclean all
 norm:
 	@cd libft && make norm
 	@norminette $(addprefix $(PUSH_SWAP_PATH),$(PUSH_SWAP_SRCS)) \
-	$(addprefix $(PUSH_SWAP_PATH),$(PUSH_SWAP_INCS))
+	$(addprefix $(PUSH_SWAP_PATH),$(PUSH_SWAP_INCS)) \
+	$(addprefix $(CHECKER_PATH),$(CHECKER_SRCS)) \
+	$(addprefix $(CHECKER_PATH),$(CHECKER_INCS))
+
 
 runp:
 	@./push_swap $(ARG) || true

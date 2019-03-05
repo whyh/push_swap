@@ -12,7 +12,7 @@
 
 #include "push_swap.h"
 
-void push_swap_parse_vt(char *arg, t_push_swap_vis *vis, size_t *i)
+void	push_swap_parse_vt(char *arg, t_push_swap_vis *vis, size_t *i)
 {
 	vis->v = 0;
 	vis->t = 0;
@@ -24,7 +24,7 @@ void push_swap_parse_vt(char *arg, t_push_swap_vis *vis, size_t *i)
 		*i = 1;
 	}
 	else if (ft_strncmp("-t", arg, -1) || ft_strncmp(" -t", arg, -1)
-			 || ft_strncmp("-t ", arg, -1) || ft_strncmp(" -t ", arg, -1))
+	|| ft_strncmp("-t ", arg, -1) || ft_strncmp(" -t ", arg, -1))
 	{
 		vis->t = 1;
 		*i = 1;

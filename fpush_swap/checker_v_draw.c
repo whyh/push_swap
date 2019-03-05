@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/04 20:00:23 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/03/04 20:00:23 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/03/05 16:44:17 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,8 @@ static void	static_draw_h_menu(t_push_swap_vis *vis)
 		vis->mlx, vis->win, 15, 290, PUSH_SWAP_RGB1, "visualisation");
 		mlx_string_put(
 		vis->mlx, vis->win, 15, 360, PUSH_SWAP_RGB1, "press R to set");
-		mlx_string_put
-		(vis->mlx, vis->win, 15, 380, PUSH_SWAP_RGB1, "stacks to the");
+		mlx_string_put(
+		vis->mlx, vis->win, 15, 380, PUSH_SWAP_RGB1, "stacks to the");
 		mlx_string_put(
 		vis->mlx, vis->win, 15, 400, PUSH_SWAP_RGB1, "initial state");
 		mlx_string_put(
@@ -42,12 +42,12 @@ static void	static_draw_interface(t_push_swap_vis *vis)
 {
 	if (ft_strlen(vis->status) == 3 && (!push_swap_sorted_a(*(vis->stack_a))
 	|| (vis->stack_b && *(vis->stack_b))))
-		mlx_string_put(
-		vis->mlx, vis->win, 735, 250, PUSH_SWAP_RGB2, vis->status);
+		mlx_string_put(vis->mlx, vis->win, 735, 250, PUSH_SWAP_RGB2,
+		vis->status);
 	else if ((!push_swap_sorted_a(*(vis->stack_a))
 	|| (vis->stack_b && *(vis->stack_b))) && ft_strlen(vis->status) == 2)
-		mlx_string_put(
-		vis->mlx, vis->win, 740, 250, PUSH_SWAP_RGB2, vis->status);
+		mlx_string_put(vis->mlx, vis->win, 740, 250, PUSH_SWAP_RGB2,
+		vis->status);
 	else if (push_swap_sorted_a(*(vis->stack_a))
 	&& (!vis->stack_b || !*(vis->stack_b)))
 		mlx_string_put(vis->mlx, vis->win, 725, 250, PUSH_SWAP_RGB2, "sorted");

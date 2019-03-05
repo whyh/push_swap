@@ -12,7 +12,7 @@
 
 #include "push_swap.h"
 
-int push_swap_v_key_release(int keycode, void *param)
+int	push_swap_v_key_release(int keycode, void *param)
 {
 	t_push_swap_vis	*vis;
 
@@ -37,7 +37,7 @@ int push_swap_v_key_release(int keycode, void *param)
 	return (1);
 }
 
-int push_swap_v_key_press(int keycode, void *param)
+int	push_swap_v_key_press(int keycode, void *param)
 {
 	t_push_swap_vis	*vis;
 
