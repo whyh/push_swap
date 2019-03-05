@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/12 11:35:38 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/03/04 23:37:31 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/03/05 16:19:28 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,10 +62,7 @@ static void	static_sort(t_push_swap_data *data)
 		{
 			data->avg = push_swap_avg(data->stack_a, data->group);
 			data->group++;
-			if (!push_swap_count_group(data->stack_a, data->group - 1))//TODO rm cz has no effect
-				push_swap_group(data, 0, data->group, 'a');
-			else//TODO rm cz has no effect
-				push_swap_group(data, data->group - 1, data->group, 'a');//TODO rm cz has no effect
+			push_swap_group(data, 0, data->group, 'a');
 			push_swap_sort(data, 'a');
 		}
 		if (data->stack_b != NULL)

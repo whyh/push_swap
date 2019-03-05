@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/18 15:34:34 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/03/04 23:39:58 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/03/05 16:08:43 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,6 @@ static int	static_fill(t_push_swap_list *stack, int flag, int nbr)
 
 static int	static_invalid(char *arg, size_t i, long long nbr)
 {
-
 	if (nbr > INT_MAX || nbr < INT_MIN || (!ft_strin(DEC, arg[i])
 	&& !(ft_strin(SIGNS, arg[i]) && ft_strin(DEC, arg[i + 1]))))
 	{
@@ -90,11 +89,6 @@ int			push_swap_parse(t_push_swap_list **stack, size_t argc, char **argv,
 	int					flag;
 
 	*stack = NULL;
-	if (i >= argc)
-	{
-		ft_printf("[redError: less then 2 arguments received\n");
-		return (0);
-	}
 	*stack = ft_memalloc(sizeof(t_push_swap_list));
 	(*stack)->next = NULL;
 	flag = 0;
@@ -109,5 +103,10 @@ int			push_swap_parse(t_push_swap_list **stack, size_t argc, char **argv,
 	while (tail->next != NULL)
 		tail = tail->next;
 	tail->next = *stack;
+	if (push_swap_stack_size(*stack) <= 1)
+	{
+		ft_printf("[redError: less then 2 arguments received\n");
+		return (0);
+	}
 	return (1);
 }

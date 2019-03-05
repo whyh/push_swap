@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/12 11:53:25 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/03/04 22:30:40 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/03/05 15:36:43 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,27 +15,6 @@
 
 # include "../libft/libft.h"
 # include "push_swap_typedefs.h"
-
-/*
-** push_swap
-*/
-
-void	push_swap_get_next(t_push_swap_data *data, char stack);
-size_t	push_swap_count_group(t_push_swap_list *stack, int group);
-void	push_swap_sort(t_push_swap_data *data, char stack);
-void	push_swap_group(t_push_swap_data *data, int group_targ, int group_new,
-		char spec);
-int		push_swap_opt(t_push_swap_data *data);
-void	get_specs(t_push_swap_data data, size_t *loop, size_t *min);
-//int	valid_next_next(t_push_swap_data *data);
-int		push_swap_sorted(t_push_swap_list *stack, int group);
-int		push_swap_next(t_push_swap_data data, t_push_swap_list *stack,
-		t_push_swap_list **stack_next, t_push_swap_list *stack_avoid);
-void	push_swap_swap(t_push_swap_data *data, char stack);
-void	push_swap_rotate_rev(t_push_swap_data *data, char stack);
-void	push_swap_rotate(t_push_swap_data *data, char stack);
-void	push_swap_push(t_push_swap_data *data, char stack);
-int		push_swap_avg(t_push_swap_list *stack, int group);
 
 /*
 ** shared(used in push_swap and checker)
@@ -51,6 +30,26 @@ void	push_swap_pp(t_push_swap_list **stack_from,
 void	push_swap_free_stack(t_push_swap_list **stack);
 int		push_swap_sorted_a(t_push_swap_list *stack);
 size_t	push_swap_stack_size(t_push_swap_list *stack);
+
+/*
+** push_swap
+*/
+
+void	push_swap_get_next(t_push_swap_data *data, char stack);
+size_t	push_swap_count_group(t_push_swap_list *stack, int group);
+void	push_swap_sort(t_push_swap_data *data, char stack);
+void	push_swap_group(t_push_swap_data *data, int group_targ, int group_new,
+		char spec);
+int		push_swap_opt(t_push_swap_data *data);
+void	get_specs(t_push_swap_data data, size_t *loop, size_t *min);
+int		push_swap_sorted(t_push_swap_list *stack, int group);
+int		push_swap_next(t_push_swap_data data, t_push_swap_list *stack,
+		t_push_swap_list **stack_next, t_push_swap_list *stack_avoid);
+void	push_swap_swap(t_push_swap_data *data, char stack);
+void	push_swap_rotate_rev(t_push_swap_data *data, char stack);
+void	push_swap_rotate(t_push_swap_data *data, char stack);
+void	push_swap_push(t_push_swap_data *data, char stack);
+int		push_swap_avg(t_push_swap_list *stack, int group);
 
 /*
 ** checker

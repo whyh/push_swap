@@ -14,8 +14,8 @@ add_executable(push_swap_clion
         ${FT_GNL}
         ${FT_PRINTF}
         ${VIS}
-        fpush_swap/checker.c
-#        fpush_swap/push_swap.c
+#        fpush_swap/checker.c
+        fpush_swap/push_swap.c
         fpush_swap/checker_t.c
         fpush_swap/checker_utils.c
         fpush_swap/checker_v.c

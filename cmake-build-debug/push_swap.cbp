@@ -82,9 +82,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker.c">
-			<Option target="push_swap_clion"/>
-		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker_t.c">
 			<Option target="push_swap_clion"/>
 		</Unit>
@@ -116,6 +113,12 @@
 			<Option target="push_swap_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker_v_utils.c">
+			<Option target="push_swap_clion"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap.c">
+			<Option target="push_swap_clion"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap.h">
 			<Option target="push_swap_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap_avg.c">

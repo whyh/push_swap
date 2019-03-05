@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "checker_v.h"
+#include "vis.h"
 
 static void	static_draw_p(t_vis2d *data2d, double x, double y, double sat)
 {

@@ -18,7 +18,7 @@
 # include "libft_typedefs.h"
 # include "ft_gnl/ft_gnl_typedefs.h"
 # include "ft_printf/ft_printf.h"
-# include "vis/checker_v.h"
+# include "vis/vis.h"
 
 int			ft_gnl(const int fd, char **line);
 int			ft_printf(const char *format, ...);

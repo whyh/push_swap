@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/04 21:35:18 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/03/04 21:39:44 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/03/05 15:58:23 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,13 @@ static void	static_shift_a(t_push_swap_data *data)
 	data->stack_next);
 	while (data->stack_next->value > data->stack_a->value
 	&& (data->stack_next->value > data->stack_a->next->value))
-//	|| (valid_next_next(data)
-// 	&& data->stack_next_next->value > data->stack_a->value)))
 	{
 		push_swap_rotate(data, 'a');
 		data->i++;
 	}
+	while (push_swap_prev(data->stack_a, 0)->value < data->stack_a->value
+	&& push_swap_prev(data->stack_a, 0)->value > data->stack_b->value)
+		push_swap_rotate_rev(data, 'a');
 }
 
 void		push_swap_sort(t_push_swap_data *data, char stack)
@@ -44,11 +45,6 @@ void		push_swap_sort(t_push_swap_data *data, char stack)
 			if (stack == 'b'
 			&& data->stack_a->value > data->stack_a->next->value)
 				push_swap_swap(data, 'a');
-			while (data->i > 0)
-			{
-				push_swap_rotate_rev(data, 'a');
-				data->i--;
-			}
 		}
 	}
 }

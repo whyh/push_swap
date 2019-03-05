@@ -42,7 +42,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/push_swap_clion.dir/libft/ft_printf/ft_printf_zjt.c.o"
   "CMakeFiles/push_swap_clion.dir/libft/vis/ft_line_gradient.c.o"
   "CMakeFiles/push_swap_clion.dir/libft/vis/ft_wu_line_circle.c.o"
-  "CMakeFiles/push_swap_clion.dir/fpush_swap/checker.c.o"
+  "CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap.c.o"
   "CMakeFiles/push_swap_clion.dir/fpush_swap/checker_t.c.o"
   "CMakeFiles/push_swap_clion.dir/fpush_swap/checker_utils.c.o"
   "CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v.c.o"

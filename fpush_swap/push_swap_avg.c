@@ -36,7 +36,7 @@ static int		push_swap_base_avg(t_push_swap_list *stack, int group)
 }
 
 static int		push_swap_get_avg(t_push_swap_list *stack, int avg,
-									int group)
+				int group)
 {
 	t_push_swap_list	*stack_tmp;
 

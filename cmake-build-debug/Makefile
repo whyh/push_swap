@@ -123,33 +123,6 @@ push_swap_clion/fast:
 	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/build
 .PHONY : push_swap_clion/fast
 
-fpush_swap/checker.o: fpush_swap/checker.c.o
-
-.PHONY : fpush_swap/checker.o
-
-# target to build an object file
-fpush_swap/checker.c.o:
-	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/checker.c.o
-.PHONY : fpush_swap/checker.c.o
-
-fpush_swap/checker.i: fpush_swap/checker.c.i
-
-.PHONY : fpush_swap/checker.i
-
-# target to preprocess a source file
-fpush_swap/checker.c.i:
-	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/checker.c.i
-.PHONY : fpush_swap/checker.c.i
-
-fpush_swap/checker.s: fpush_swap/checker.c.s
-
-.PHONY : fpush_swap/checker.s
-
-# target to generate assembly for a file
-fpush_swap/checker.c.s:
-	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/checker.c.s
-.PHONY : fpush_swap/checker.c.s
-
 fpush_swap/checker_t.o: fpush_swap/checker_t.c.o
 
 .PHONY : fpush_swap/checker_t.o
@@ -446,6 +419,33 @@ fpush_swap/checker_v_utils.s: fpush_swap/checker_v_utils.c.s
 fpush_swap/checker_v_utils.c.s:
 	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v_utils.c.s
 .PHONY : fpush_swap/checker_v_utils.c.s
+
+fpush_swap/push_swap.o: fpush_swap/push_swap.c.o
+
+.PHONY : fpush_swap/push_swap.o
+
+# target to build an object file
+fpush_swap/push_swap.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap.c.o
+.PHONY : fpush_swap/push_swap.c.o
+
+fpush_swap/push_swap.i: fpush_swap/push_swap.c.i
+
+.PHONY : fpush_swap/push_swap.i
+
+# target to preprocess a source file
+fpush_swap/push_swap.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap.c.i
+.PHONY : fpush_swap/push_swap.c.i
+
+fpush_swap/push_swap.s: fpush_swap/push_swap.c.s
+
+.PHONY : fpush_swap/push_swap.s
+
+# target to generate assembly for a file
+fpush_swap/push_swap.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_clion.dir/build.make CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap.c.s
+.PHONY : fpush_swap/push_swap.c.s
 
 fpush_swap/push_swap_avg.o: fpush_swap/push_swap_avg.c.o
 
@@ -1833,9 +1833,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... push_swap_clion"
-	@echo "... fpush_swap/checker.o"
-	@echo "... fpush_swap/checker.i"
-	@echo "... fpush_swap/checker.s"
 	@echo "... fpush_swap/checker_t.o"
 	@echo "... fpush_swap/checker_t.i"
 	@echo "... fpush_swap/checker_t.s"
@@ -1869,6 +1866,9 @@ help:
 	@echo "... fpush_swap/checker_v_utils.o"
 	@echo "... fpush_swap/checker_v_utils.i"
 	@echo "... fpush_swap/checker_v_utils.s"
+	@echo "... fpush_swap/push_swap.o"
+	@echo "... fpush_swap/push_swap.i"
+	@echo "... fpush_swap/push_swap.s"
 	@echo "... fpush_swap/push_swap_avg.o"
 	@echo "... fpush_swap/push_swap_avg.i"
 	@echo "... fpush_swap/push_swap_avg.s"

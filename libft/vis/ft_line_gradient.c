@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "checker_v.h"
+#include "vis.h"
 
 static int		static_get_color(int color0, int color1, double perc)
 {

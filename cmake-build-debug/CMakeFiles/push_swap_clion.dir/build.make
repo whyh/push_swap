@@ -616,18 +616,18 @@ CMakeFiles/push_swap_clion.dir/libft/vis/ft_wu_line_circle.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap_clion.dir/libft/vis/ft_wu_line_circle.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dderevyn/CLionProjects/push_swap/libft/vis/ft_wu_line_circle.c -o CMakeFiles/push_swap_clion.dir/libft/vis/ft_wu_line_circle.c.s
 
-CMakeFiles/push_swap_clion.dir/fpush_swap/checker.c.o: CMakeFiles/push_swap_clion.dir/flags.make
-CMakeFiles/push_swap_clion.dir/fpush_swap/checker.c.o: ../fpush_swap/checker.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/push_swap_clion.dir/fpush_swap/checker.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap_clion.dir/fpush_swap/checker.c.o   -c /Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker.c
+CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap.c.o: CMakeFiles/push_swap_clion.dir/flags.make
+CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap.c.o: ../fpush_swap/push_swap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap.c.o   -c /Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap.c
 
-CMakeFiles/push_swap_clion.dir/fpush_swap/checker.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap_clion.dir/fpush_swap/checker.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker.c > CMakeFiles/push_swap_clion.dir/fpush_swap/checker.c.i
+CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap.c > CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap.c.i
 
-CMakeFiles/push_swap_clion.dir/fpush_swap/checker.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap_clion.dir/fpush_swap/checker.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dderevyn/CLionProjects/push_swap/fpush_swap/checker.c -o CMakeFiles/push_swap_clion.dir/fpush_swap/checker.c.s
+CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dderevyn/CLionProjects/push_swap/fpush_swap/push_swap.c -o CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap.c.s
 
 CMakeFiles/push_swap_clion.dir/fpush_swap/checker_t.c.o: CMakeFiles/push_swap_clion.dir/flags.make
 CMakeFiles/push_swap_clion.dir/fpush_swap/checker_t.c.o: ../fpush_swap/checker_t.c
@@ -921,7 +921,7 @@ push_swap_clion_OBJECTS = \
 "CMakeFiles/push_swap_clion.dir/libft/ft_printf/ft_printf_zjt.c.o" \
 "CMakeFiles/push_swap_clion.dir/libft/vis/ft_line_gradient.c.o" \
 "CMakeFiles/push_swap_clion.dir/libft/vis/ft_wu_line_circle.c.o" \
-"CMakeFiles/push_swap_clion.dir/fpush_swap/checker.c.o" \
+"CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap.c.o" \
 "CMakeFiles/push_swap_clion.dir/fpush_swap/checker_t.c.o" \
 "CMakeFiles/push_swap_clion.dir/fpush_swap/checker_utils.c.o" \
 "CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v.c.o" \
@@ -988,7 +988,7 @@ push_swap_clion: CMakeFiles/push_swap_clion.dir/libft/ft_printf/ft_printf_width.
 push_swap_clion: CMakeFiles/push_swap_clion.dir/libft/ft_printf/ft_printf_zjt.c.o
 push_swap_clion: CMakeFiles/push_swap_clion.dir/libft/vis/ft_line_gradient.c.o
 push_swap_clion: CMakeFiles/push_swap_clion.dir/libft/vis/ft_wu_line_circle.c.o
-push_swap_clion: CMakeFiles/push_swap_clion.dir/fpush_swap/checker.c.o
+push_swap_clion: CMakeFiles/push_swap_clion.dir/fpush_swap/push_swap.c.o
 push_swap_clion: CMakeFiles/push_swap_clion.dir/fpush_swap/checker_t.c.o
 push_swap_clion: CMakeFiles/push_swap_clion.dir/fpush_swap/checker_utils.c.o
 push_swap_clion: CMakeFiles/push_swap_clion.dir/fpush_swap/checker_v.c.o

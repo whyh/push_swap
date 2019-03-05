@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/04 21:39:47 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/03/04 21:44:24 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/03/05 15:55:06 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,13 +33,7 @@ static int	static_opt_next(t_push_swap_list *stack)
 		stack_tmp2 = push_swap_prev(stack_tmp2, 0);
 		--rr;
 	}
-//	if (push_swap_sorted_a(stack_tmp1) && !push_swap_sorted_a(stack_tmp2))
-//		return (r);
-//	if (!push_swap_sorted_a(stack_tmp1) && push_swap_sorted_a(stack_tmp2))
-//		return (rr);
-//	if (push_swap_sorted_a(stack_tmp1) && push_swap_sorted_a(stack_tmp2))
 	return ((ft_abs(r) < ft_abs(rr)) ? r : rr);
-//	return (0);
 }
 
 static void	static_opt_statements(t_push_swap_data *data)
@@ -78,24 +72,16 @@ int			push_swap_opt(t_push_swap_data *data)
 	return (!push_swap_sorted_a(data->stack_a) ? 1 : 0);
 }
 
-//int	valid_next_next(t_push_swap_data *data)
-//{
-//	if (data->stack_next_next->g == data->group
-//		&& data->stack_next_next != data->stack_next)
-//		return (1);
-//	return (0);
-//}
-
 void		get_specs(t_push_swap_data data, size_t *loop, size_t *min)
 {
 	if (data.stack_size <= 250)
 	{
-		*loop = 2;//2
-		*min = 5;//5
-	}//100
+		*loop = 2;
+		*min = 5;
+	}
 	else
 	{
-		*loop = 3;//3
-		*min = 25;//25
-	}//500
+		*loop = 3;
+		*min = 25;
+	}
 }
