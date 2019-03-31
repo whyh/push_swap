@@ -1,3 +1,0 @@
-/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/dderevyn/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_clion.dir
