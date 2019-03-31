@@ -12,7 +12,7 @@ An objective was to create a program `./push_swap` that will print out instructi
 - `rr`execute `ra` and `rb`
 - `rra` reverse rotate `a` (the last element becomes the first)
 - `rrb` reverse rotate `b`
-- `rrr` execute `rra` and `rrb`
+- `rrr` execute `rra` and `rrb`  
 And a second objective was to create a program `./checker` , that will execute instructions and tell if the stack waa sorted, or not.  
 I was limited by assignment to use just two stacks. At the start one filled with given integers and the second is empty.  
 
@@ -21,10 +21,10 @@ I've developed a quicksort based algorithm, coz as was stated in an appointment,
 
 ## Usage
 I am using the mlx (mini lib x) library for visualisation, you need to install it first. It's only compitable with MacOS(10.12 and later).  
-Run `make` to create `push_swap` and `checker` executables.
-Use `./push_swap 0 2 1 3 5` to get instructions sorting providen numbers.
-Use `./checker 3 1 5 2 0` and provide instructions to see, if they will sort given numbers.
-Or use `./push_swap 5 2 1 3 0 | ./checker 5 2 1 3 0` to check if instructions, provided by push_swap actually sorts stack with given numbers.
+Run `make` to create `push_swap` and `checker` executables.  
+Use `./push_swap 0 2 1 3 5` to get instructions sorting providen numbers.  
+Use `./checker 3 1 5 2 0` and provide instructions to see, if they will sort given numbers.  
+Or use `./push_swap 5 2 1 3 0 | ./checker 5 2 1 3 0` to check if instructions, provided by push_swap actually sorts stack with given numbers.  
 
 ## Visualisation
 //picture  
