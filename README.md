@@ -40,8 +40,8 @@ Hold `H` to see help menu
 
 ### A few more features
 To print out the state of stacks after each operation use option `-c` , just like below  
-`./push_swap 0 1 4 3 | ./checker -t 0 1 4 3 
-//pic
-Numbers could be passed as one or many arguments
-`./
+`./push_swap 0 1 4 3 | ./checker -t 0 1 4 3`  
+//pic  
+Numbers could be passed as one or many arguments  
+`./push_swap 0 2 3` or `./push_swap "0 2 3"`or `./push_swap " 0" "2 3"` etc
 
