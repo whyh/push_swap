@@ -38,7 +38,7 @@ To restart sorting press 'R', or after sorting completed press the start button
 Hold `H` to see help menu  
 ![help](../assets/image/help.gif)     
 
-### A few more features
+### Few more features
 To print out the state of stacks after each operation use option `-c` , just like below  
 `./push_swap 0 1 4 3 | ./checker -t 0 1 4 3`  
 ![minus_t](../assets/image/minus_t.png)     
