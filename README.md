@@ -46,20 +46,27 @@ Or use `./push_swap 5 2 1 3 0 | ./checker 5 2 1 3 0` to check if instructions, p
 
 ## Visualisation
 To start visualisation run `./checker` with `-v` option  
+
 Example `./push_swap 0 1 6 9 2 5 3 6 4 | ./checker -v 0 1 6 9 2 5 3 6 4`  
+
 To start sorting press `space` or the Start button  
 ![push_swap](../assets/image/push_swap.png)     
+
 You can turn on the operation counter by pressing `C`  
 ![counter](../assets/image/counter.gif)     
+
 To restart sorting press 'R', or after sorting completed press the start button  
 ![restart](../assets/image/restart.gif)     
+
 Hold `H` to see help menu  
 ![help](../assets/image/help.gif)     
 
 ### Features
-To print out the state of stacks after each operation use option `-c` 
+To print out the state of stacks after each operation use option `-t` 
+
 `./push_swap 0 1 4 3 | ./checker -t 0 1 4 3`  
 ![minus_t](../assets/image/minus_t.png)     
+
 Numbers can be passed as one or many arguments  
 `./push_swap 0 2 3` or `./push_swap "0 2 3"` or `./push_swap " 0" "2 3"`
 
