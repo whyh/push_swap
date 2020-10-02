@@ -33,7 +33,7 @@ Create `./checker` program to test and grade the first program
 Experimented with multiple sorting algorithms (`Merge sort`, `Radix sort`, `Timsort`) but settled on `Quicksort`, because it was the best fit for given constraints. Standard `Quicksort` algorithm wouldn't work, so I had to reimplement it, using allowed operations, and optimizing for the constrained auxilar space
 
 ## Usage
-Using mlx (mini lib x) library for visualisation. Install it (only compitable with MacOS 10.12 and later)
+I am using `mlx` (mini lib x) library for visualisation. Install it (only compitable with MacOS 10.12 and later)
 
 Run `make` to create `push_swap` and `checker` executables
 
